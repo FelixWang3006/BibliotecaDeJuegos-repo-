@@ -36,8 +36,12 @@ namespace BibliotecaDeJuegos
                     picGenero.Image = Properties.Resources.aventura_preview;
                     break;
 
-                case "Carrera/Deporte":
+                case "Deporte":
                     picGenero.Image = Properties.Resources.deporte_preview;
+                    break;
+
+                case "Carreras":
+                    
                     break;
 
                 case "Estrategia":

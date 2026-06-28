@@ -161,7 +161,8 @@
             this.cbGenero.Items.AddRange(new object[] {
             "Acción",
             "Aventura",
-            "Carrera/Deporte",
+            "Carrera",
+            "Deporte",
             "Estrategia",
             "Plataforma",
             "RPG",
