@@ -29,7 +29,6 @@ namespace BibliotecaDeJuegos
             switch (generoSeleccionado)
             {
                 case "Acción":
-                case "Accion":
                     picGenero.Image = Properties.Resources.accion_preview;
                     break;
 
@@ -38,8 +37,6 @@ namespace BibliotecaDeJuegos
                     break;
 
                 case "Carrera/Deporte":
-                case "Deporte":
-                case "Deportes":
                     picGenero.Image = Properties.Resources.deporte_preview;
                     break;
 
@@ -48,12 +45,10 @@ namespace BibliotecaDeJuegos
                     break;
 
                 case "Plataforma":
-                case "Plataformas":
                     picGenero.Image = Properties.Resources.plataformas_preview;
                     break;
 
                 case "Puzzle":
-                case "Puzzles":
                     picGenero.Image = Properties.Resources.puzzle_preview;
                     break;
 
