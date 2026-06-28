@@ -16,5 +16,61 @@ namespace BibliotecaDeJuegos
         {
             InitializeComponent();
         }
+
+        private void picGenero_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbGenero_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string generoSeleccionado = cbGenero.SelectedItem?.ToString();
+
+            switch (generoSeleccionado)
+            {
+                case "Acción":
+                case "Accion":
+                    picGenero.Image = Properties.Resources.accion_preview;
+                    break;
+
+                case "Aventura":
+                    picGenero.Image = Properties.Resources.aventura_preview;
+                    break;
+
+                case "Carrera/Deporte":
+                case "Deporte":
+                case "Deportes":
+                    picGenero.Image = Properties.Resources.deporte_preview;
+                    break;
+
+                case "Estrategia":
+                    picGenero.Image = Properties.Resources.estrategia_preview;
+                    break;
+
+                case "Plataforma":
+                case "Plataformas":
+                    picGenero.Image = Properties.Resources.plataformas_preview;
+                    break;
+
+                case "Puzzle":
+                case "Puzzles":
+                    picGenero.Image = Properties.Resources.puzzle_preview;
+                    break;
+
+                case "RPG":
+                    picGenero.Image = Properties.Resources.RPG_preview;
+                    break;
+
+                default:
+               
+                    picGenero.Image = null;
+                    break;
+            }
+        }
     }
 }
+
+
+
+
+
