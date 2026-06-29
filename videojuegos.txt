@@ -1,0 +1,157 @@
+Grand Theft Auto V;Acción;Mundo Abierto;PlayStation 4;Baja;Larga;Fotorrealismo;Exploración;Alta;9.7
+Call of Duty: Modern Warfare;Acción;FPS;PC;Media;Corta;Fotorrealismo;Combate;Alta;8.0
+Red Dead Redemption 2;Acción;Mundo Abierto;Xbox One;Media;Larga;Fotorrealismo;Historia;Alta;9.7
+God of War (2018);Acción;Hack and Slash;PlayStation 4;Alta;Media;Fotorrealismo;Combate;Alta;9.4
+Resident Evil 4;Acción;Survival Horror;PlayStation 5;Alta;Media;Fotorrealismo;Supervivencia;Alta;9.3
+The Last of Us;Acción;Survival Horror;PlayStation 3;Alta;Media;Fotorrealismo;Historia;Alta;9.5
+Assassin's Creed;Acción;Sigilo;PC;Baja;Larga;Fotorrealismo;Exploración;Alta;8.5
+Halo: Combat Evolved;Acción;FPS;Xbox;Media;Media;Estilizado;Combate;Alta;9.7
+Doom (1993);Acción;FPS;PC;Alta;Corta;Pixel Art;Combate;Alta;9.3
+Devil May Cry 5;Acción;Hack and Slash;PlayStation 4;Alta;Media;Fotorrealismo;Combate;Alta;8.8
+Doom Eternal;Acción;FPS;PC;Alta;Media;Estilizado;Combate;Alta;8.8
+Gears of War;Acción;TPS;Xbox 360;Media;Media;Fotorrealismo;Cooperación;Alta;9.4
+Minecraft;Aventura;Sandbox;PlayStation 4;Baja;Larga;Voxeles;Creatividad;Alta;9.3
+The Legend of Zelda: Ocarina of Time;Aventura;Acción-Aventura;Nintendo 64;Media;Media;Estilizado;Historia;Alta;9.9
+Uncharted 4: A Thief's End;Aventura;Acción-Aventura;PlayStation 4;Media;Media;Fotorrealismo;Exploración;Alta;9.3
+Tomb Raider (2013);Aventura;Supervivencia;PC;Media;Media;Fotorrealismo;Exploración;Alta;8.6
+The Secret of Monkey Island;Aventura;Point and Click;PC;Alta;Corta;Pixel Art;Historia;Alta;8.8
+Life is Strange;Aventura;Aventura Gráfica;PlayStation 4;Baja;Corta;Estilizado;Historia;Alta;8.5
+Grim Fandango;Aventura;Point and Click;PC;Alta;Media;Estilizado;Historia;Alta;9.4
+It Takes Two;Aventura;Plataformas;PlayStation 5;Media;Media;Estilizado;Cooperación;Alta;8.9
+Outer Wilds;Aventura;Exploración;PC;Alta;Media;Estilizado;Exploración;Alta;8.5
+Detroit: Become Human;Aventura;Aventura Gráfica;PlayStation 4;Baja;Larga;Fotorrealismo;Historia;Alta;7.8
+Subnautica;Aventura;Supervivencia;PC;Media;Larga;Estilizado;Supervivencia;Alta;8.7
+EA Sports FC 26;Deporte;Simulación Deportiva;PlayStation 5;Media;Larga;Fotorrealismo;Competitividad;Alta;8.1
+Wii Sports;Deporte;Simulación Deportiva;Nintendo Wii;Baja;Corta;Minimalista;Competitividad;Alta;7.6
+NBA 2K26;Deporte;Simulación Deportiva;PlayStation 5;Alta;Larga;Fotorrealismo;Competitividad;Alta;8.2
+Madden NFL 26;Deporte;Simulación Deportiva;PlayStation 5;Alta;Larga;Fotorrealismo;Competitividad;Alta;7.5
+WWE 2K26;Deporte;Lucha;PlayStation 5;Media;Larga;Fotorrealismo;Competitividad;Alta;7.8
+eFootball;Deporte;Simulación Deportiva;PlayStation 5;Media;Larga;Fotorrealismo;Competitividad;Alta;7.2
+Tony Hawk's Pro Skater 1+2;Deporte;Skate;PC;Media;Media;Estilizado;Competitividad;Alta;8.9
+F1 24;Deporte;Simulación;PC;Alta;Larga;Fotorrealismo;Competitividad;Alta;7.8
+MLB The Show 24;Deporte;Simulación Deportiva;PlayStation 5;Media;Larga;Fotorrealismo;Competitividad;Alta;8.0
+EA Sports UFC 5;Deporte;Lucha;PlayStation 5;Alta;Media;Fotorrealismo;Competitividad;Alta;7.9
+Mario Strikers: Battle League;Deporte;Arcade Deportivo;Nintendo Switch;Baja;Media;Cartoon;Competitividad;Alta;7.3
+Rocket League;Deporte;Arcade Deportivo;PC;Alta;Larga;Estilizado;Competitividad;Alta;8.6
+Mario Kart 8 Deluxe;Carreras;Kart Racer;Nintendo Switch;Baja;Larga;Cartoon;Competitividad;Alta;9.2
+Gran Turismo 7;Carreras;Simulación;PlayStation 5;Alta;Larga;Fotorrealismo;Competitividad;Alta;8.7
+Forza Horizon 5;Carreras;Mundo Abierto;Xbox Series X;Baja;Larga;Fotorrealismo;Exploración;Alta;9.2
+Need for Speed: Underground 2;Carreras;Mundo Abierto;PlayStation 2;Media;Larga;Estilizado;Competitividad;Alta;8.2
+Burnout 3: Takedown;Carreras;Arcade;PlayStation 2;Alta;Media;Estilizado;Competitividad;Alta;9.4
+Assetto Corsa;Carreras;Simulación;PC;Alta;Larga;Fotorrealismo;Competitividad;Alta;8.5
+The Crew Motorfest;Carreras;Mundo Abierto;PlayStation 5;Baja;Larga;Fotorrealismo;Exploración;Alta;7.5
+Midnight Club 3: DUB Edition;Carreras;Callejero;PlayStation 2;Alta;Larga;Estilizado;Competitividad;Alta;8.4
+Dirt 5;Carreras;Rally;Xbox Series X;Baja;Media;Estilizado;Competitividad;Alta;8.0
+Crash Team Racing Nitro-Fueled;Carreras;Kart Racer;PlayStation 4;Alta;Larga;Cartoon;Competitividad;Alta;8.3
+F-Zero GX;Carreras;Futurista;Nintendo GameCube;Alta;Media;Estilizado;Competitividad;Alta;8.9
+Asphalt Legends Unite;Carreras;Arcade;PC;Baja;Larga;Fotorrealismo;Competitividad;Alta;7.7
+Age of Empires II: Definitive Edition;Estrategia;RTS;PC;Alta;Larga;Estilizado;Estrategia;Alta;8.9
+StarCraft II: Wings of Liberty;Estrategia;RTS;PC;Alta;Larga;Estilizado;Estrategia;Alta;9.3
+Civilization VI;Estrategia;4X;PC;Alta;Larga;Estilizado;Estrategia;Alta;8.8
+Clash of Clans;Estrategia;Estrategia en Tiempo Real;Móviles;Baja;Larga;Cartoon;Estrategia;Alta;8.0
+Total War: WARHAMMER III;Estrategia;Estrategia en Tiempo Real;PC;Alta;Larga;Fotorrealismo;Estrategia;Alta;8.5
+XCOM 2;Estrategia;Táctica por Turnos;PlayStation 4;Alta;Media;Fotorrealismo;Estrategia;Alta;8.8
+Command & Conquer: Red Alert 2;Estrategia;Estrategia en Tiempo Real;PC;Media;Media;Pixel Art;Estrategia;Alta;8.6
+Warcraft III: Reign of Chaos;Estrategia;Estrategia en Tiempo Real;PC;Alta;Media;Estilizado;Estrategia;Alta;9.2
+Fire Emblem: Three Houses;Estrategia;RPG Táctico;Nintendo Switch;Media;Larga;Cel Shading;Historia;Alta;8.9
+Hearts of Iron IV;Estrategia;Gran Estrategia;PC;Alta;Larga;Fotorrealismo;Estrategia;Alta;8.3
+Crusader Kings III;Estrategia;Gran Estrategia;PC;Alta;Larga;Estilizado;Estrategia;Alta;9.1
+Pikmin 4;Estrategia;Estrategia de Gestión;Nintendo Switch;Baja;Media;Cartoon;Estrategia;Alta;8.7
+Plague Inc.: Evolved;Estrategia;Simulación;PC;Media;Media;Minimalista;Estrategia;Alta;8.0
+Super Mario Bros.;Plataforma;Plataformas 2D;Nintendo NES;Media;Corta;Pixel Art;Exploración;Alta;9.2
+Super Mario Odyssey;Plataforma;Plataformas 3D;Nintendo Switch;Baja;Media;Cartoon;Exploración;Alta;9.7
+Celeste;Plataforma;Plataformas de Precisión;PC;Alta;Media;Pixel Art;Superación;Alta;9.3
+Sonic the Hedgehog 2;Plataforma;Plataformas 2D;Sega Genesis;Media;Corta;Pixel Art;Cooperación;Alta;8.7
+Crash Bandicoot N. Sane Trilogy;Plataforma;Plataformas 3D;PlayStation 4;Alta;Larga;Cartoon;Competitividad;Alta;8.0
+Donkey Kong Country: Tropical Freeze;Plataforma;Plataformas 2D;Nintendo Wii U;Alta;Media;Cartoon;Competitividad;Alta;8.6
+Hollow Knight;Plataforma;Metroidvania;PC;Alta;Larga;Estilizado;Exploración;Alta;9.0
+Ori and the Will of the Wisps;Plataforma;Metroidvania;Xbox One;Media;Media;Estilizado;Exploración;Alta;9.0
+Rayman Legends;Plataforma;Plataformas 2D;PlayStation 4;Media;Media;Estilizado;Competitividad;Alta;9.0
+Cuphead;Plataforma;Run and Gun;PC;Alta;Media;Cartoon;Competitividad;Alta;8.8
+Super Meat Boy;Plataforma;Plataformas de Precisión;Xbox 360;Alta;Media;Estilizado;Competitividad;Alta;9.0
+LittleBigPlanet;Plataforma;Plataformas;PlayStation 3;Baja;Corta;Estilizado;Creatividad;Alta;9.5
+Spelunky 2;Plataforma;Roguelike;PC;Alta;Larga;Estilizado;Supervivencia;Alta;8.6
+Tetris;Puzzle;Caída de Bloques;Nintendo Game Boy;Baja;Larga;Pixel Art;Puzzle;Alta;9.5
+Portal 2;Puzzle;Puzle en Primera Persona;PC;Media;Media;Fotorrealismo;Puzzle;Alta;9.5
+The Witness;Puzzle;Exploración;PlayStation 4;Alta;Larga;Estilizado;Puzzle;Alta;9.0
+Baba Is You;Puzzle;Lógica;Nintendo Switch;Alta;Larga;Pixel Art;Puzzle;Alta;8.4
+Candy Crush Saga;Puzzle;Match-3;Móviles;Baja;Larga;Cartoon;Puzzle;Alta;7.9
+Monument Valley;Puzzle;Lógica;Móviles;Baja;Corta;Minimalista;Puzzle;Alta;8.9
+The Talos Principle;Puzzle;Puzle en Primera Persona;PC;Alta;Larga;Fotorrealismo;Puzzle;Alta;8.5
+Professor Layton and the Curious Village;Puzzle;Acertijos;Nintendo DS;Media;Media;Cartoon;Puzzle;Alta;8.5
+Catherine;Puzzle;Caída de Bloques;PlayStation 3;Alta;Media;Cel Shading;Puzzle;Alta;8.2
+World of Goo;Puzzle;Físicas;Nintendo Wii;Media;Corta;Estilizado;Puzzle;Alta;9.0
+Lemmings;Puzzle;Lógica;Amiga;Alta;Media;Pixel Art;Puzzle;Alta;8.5
+The Room;Puzzle;Escape Room;PC;Media;Corta;Fotorrealismo;Puzzle;Alta;8.8
+Tetris Effect: Connected;Puzzle;Caída de Bloques;PlayStation 4;Media;Larga;Estilizado;Puzzle;Alta;8.8
+The Witcher 3: Wild Hunt;RPG;Action RPG;PlayStation 4;Media;Larga;Fotorrealismo;Historia;Alta;9.3
+Elden Ring;RPG;Soulslike;PlayStation 5;Alta;Larga;Fotorrealismo;Historia;Alta;9.6
+The Elder Scrolls V: Skyrim;RPG;RPG de Mundo Abierto;PC;Baja;Larga;Fotorrealismo;Exploración;Alta;9.4
+Baldur's Gate 3;RPG;RPG Táctico;PC;Alta;Larga;Fotorrealismo;Historia;Alta;9.6
+Final Fantasy VII (Original);RPG;JRPG;PlayStation;Media;Larga;Estilizado;Historia;Alta;9.2
+World of Warcraft;RPG;MMORPG;PC;Media;Larga;Estilizado;Historia;Alta;9.3
+Pokémon Rojo y Azul;RPG;JRPG;Nintendo Game Boy;Baja;Media;Pixel Art;Exploración;Alta;8.9
+Mass Effect 2;RPG;Action RPG;Xbox 360;Media;Media;Fotorrealismo;Historia;Alta;9.6
+Persona 5 Royal;RPG;JRPG;PlayStation 4;Media;Larga;Cel Shading;Historia;Alta;9.5
+Fallout: New Vegas;RPG;Action RPG;PC;Media;Larga;Fotorrealismo;Historia;Alta;8.4
+Dark Souls;RPG;Soulslike;PlayStation 3;Alta;Larga;Estilizado;Historia;Alta;8.9
+Chrono Trigger;RPG;JRPG;Nintendo SNES;Media;Media;Pixel Art;Historia;Alta;9.43
+Cyberpunk 2077;RPG;Action RPG;PC;Media;Larga;Fotorrealismo;Historia;Alta;8.6
+Mario Kart 8;Carreras;Kart Racer;Nintendo Wii U;Baja;Larga;Cartoon;Competitividad;Alta;8.4
+Super Mario 3D World;Plataforma;Plataformas 3D;Nintendo Wii U;Baja;Media;Cartoon;Cooperación;Alta;9.3
+New Super Mario Bros. U;Plataforma;Plataformas 2D;Nintendo Wii U;Media;Media;Cartoon;Cooperación;Alta;8.4
+Super Smash Bros. for Wii U;Acción;Lucha;Nintendo Wii U;Alta;Larga;Estilizado;Competitividad;Alta;9.2
+Splatoon;Acción;Shooter en Tercera Persona;Nintendo Wii U;Media;Larga;Cartoon;Competitividad;Alta;8.1
+Super Mario Maker;Plataforma;Creador de Niveles;Nintendo Wii U;Baja;Larga;Pixel Art;Creatividad;Alta;8.8
+The Legend of Zelda: Breath of the Wild;Aventura;Acción-Aventura;Nintendo Wii U;Alta;Larga;Cel Shading;Exploración;Alta;9.7
+Animal Crossing: New Horizons;Aventura;Simulación;Nintendo Switch;Baja;Larga;Cartoon;Creatividad;Alta;9.0
+The Sims 4;Estrategia;Simulación;PC;Baja;Larga;Estilizado;Creatividad;Alta;7.0
+Kirby's Epic Yarn;Plataforma;Plataformas 2D;Nintendo Wii;Baja;Corta;Estilizado;Exploración;Alta;8.6
+Stardew Valley;RPG;Simulación;PC;Baja;Larga;Pixel Art;Exploración;Alta;8.9
+Pokémon Let's Go, Pikachu!;RPG;JRPG;Nintendo Switch;Baja;Media;Cartoon;Exploración;Alta;8.0
+LEGO Star Wars: The Skywalker Saga;Acción;Acción-Aventura;PlayStation 4;Baja;Media;Cartoon;Cooperación;Alta;8.2
+Portal;Puzzle;Puzle en Primera Persona;PC;Media;Corta;Fotorrealismo;Historia;Alta;9.0
+Untitled Goose Game;Puzzle;Sigilo;Nintendo Switch;Baja;Corta;Minimalista;Exploración;Alta;8.1
+Journey;Aventura;Exploración;PlayStation 3;Baja;Corta;Estilizado;Exploración;Alta;9.2
+Inside;Plataforma;Puzle;Xbox One;Baja;Corta;Estilizado;Historia;Alta;9.3
+What Remains of Edith Finch;Aventura;Narrativo;PlayStation 4;Baja;Corta;Fotorrealismo;Historia;Alta;8.8
+Limbo;Plataforma;Puzle;Xbox 360;Media;Corta;Minimalista;Supervivencia;Alta;8.8
+Gris;Plataforma;Puzle;PC;Baja;Corta;Minimalista;Exploración;Alta;8.4
+Teardown;Acción;Sandbox;PC;Media;Media;Voxeles;Creatividad;Alta;8.0
+Trove;RPG;MMORPG;PC;Baja;Larga;Voxeles;Exploración;Alta;6.5
+Crossy Road;Carreras;Arcade;Móviles;Baja;Corta;Voxeles;Competitividad;Alta;8.8
+The Touryst;Aventura;Exploración;Nintendo Switch;Media;Corta;Voxeles;Exploración;Alta;8.2
+Cube World;RPG;Action RPG;PC;Alta;Larga;Voxeles;Exploración;Alta;5.0
+Voxelgram;Puzzle;Lógica;PC;Baja;Media;Voxeles;Estrategia;Alta;7.9
+Overcooked! All You Can Eat;Estrategia;Simulación;Nintendo Switch;Alta;Media;Cartoon;Cooperación;Alta;8.5
+Left 4 Dead 2;Acción;FPS;PC;Media;Media;Fotorrealismo;Cooperación;Alta;8.9
+A Way Out;Aventura;Drama Interactivo;PlayStation 4;Baja;Corta;Fotorrealismo;Cooperación;Alta;7.8
+Monster Hunter: Wilds;RPG;Action RPG;PlayStation 5;Alta;Larga;Fotorrealismo;Cooperación;Alta;9.0
+Helldivers 2;Acción;Shooter en Tercera Persona;PC;Alta;Larga;Fotorrealismo;Cooperación;Alta;8.2
+EarthBound;RPG;JRPG;Super Nintendo;Alta;Larga;Pixel Art;Historia;Baja;9.2
+Psychonauts;Plataforma;Plataformas 3D;PlayStation 2;Media;Media;Estilizado;Exploración;Baja;8.8
+Ōkami;Aventura;Acción-Aventura;PlayStation 2;Media;Larga;Cel Shading;Exploración;Baja;9.3
+Vampire: The Masquerade – Bloodlines;RPG;Action RPG;PC;Alta;Larga;Fotorrealismo;Historia;Baja;8.0
+Planescape: Torment;RPG;RPG Clásico;PC;Alta;Larga;Pixel Art;Historia;Baja;9.1
+Spec Ops: The Line;Acción;Shooter en Tercera Persona;Xbox 360;Media;Corta;Fotorrealismo;Historia;Baja;7.7
+The Elder Scrolls IV: Oblivion;RPG;RPG de Mundo Abierto;PC;Media;Larga;Fotorrealismo;Exploración;Alta;9.4
+BioShock;Acción;FPS;PC;Media;Media;Estilizado;Historia;Alta;9.6
+Grand Theft Auto IV;Acción;Mundo Abierto;PlayStation 3;Baja;Larga;Fotorrealismo;Exploración;Alta;9.8
+Uncharted 2: Among Thieves;Aventura;Acción-Aventura;PlayStation 3;Media;Media;Fotorrealismo;Historia;Alta;9.6
+Red Dead Redemption;Acción;Mundo Abierto;PlayStation 3;Media;Larga;Fotorrealismo;Exploración;Alta;9.5
+The Walking Dead;Aventura;Aventura Gráfica;PC;Baja;Corta;Cel Shading;Historia;Alta;9.2
+Dragon Age: Inquisition;RPG;Action RPG;PlayStation 4;Media;Larga;Estilizado;Estrategia;Alta;8.9
+Overwatch;Acción;Hero Shooter;PC;Alta;Larga;Estilizado;Competitividad;Alta;9.1
+Sekiro: Shadows Die Twice;Acción;Soulslike;PC;Alta;Media;Fotorrealismo;Combate;Alta;9.0
+The Last of Us Part II;Acción;Survival Horror;PlayStation 4;Alta;Larga;Fotorrealismo;Historia;Alta;9.3
+Astro Bot;Plataforma;Plataformas 3D;PlayStation 5;Baja;Media;Cartoon;Exploración;Alta;9.4
+Clair Obscur: Expedition 33;RPG;RPG por Turnos;PlayStation 5;Alta;Larga;Fotorrealismo;Estrategia;Alta;9.2
+Flower;Aventura;Exploración;PlayStation 3;Baja;Corta;Estilizado;Exploración;Alta;8.7
+Gone Home;Aventura;Narrativo;PC;Baja;Corta;Fotorrealismo;Historia;Alta;8.6
+Shovel Knight;Plataforma;Plataformas 2D;Nintendo 3DS;Media;Media;Pixel Art;Combate;Alta;9.0
+Disco Elysium;RPG;RPG Narrativo;PC;Media;Larga;Estilizado;Historia;Alta;9.2
+Hades;Acción;Roguelike;PC;Alta;Larga;Estilizado;Combate;Alta;9.3
+Kena: Bridge of Spirits;Aventura;Acción-Aventura;PlayStation 5;Media;Media;Cartoon;Combate;Alta;8.1
+Stray;Aventura;Exploración;PlayStation 5;Baja;Corta;Fotorrealismo;Exploración;Alta;8.3
+Sea of Stars;RPG;JRPG;Nintendo Switch;Media;Larga;Pixel Art;Historia;Alta;8.9
+Balatro;Estrategia;Roguelike de Cartas;PC;Alta;Larga;Pixel Art;Estrategia;Alta;9.0
