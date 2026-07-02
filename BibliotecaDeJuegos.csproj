@@ -64,12 +64,6 @@
     <Compile Include="Juego Aleatorio.Designer.cs">
       <DependentUpon>Juego Aleatorio.cs</DependentUpon>
     </Compile>
-    <Compile Include="Perfil gamer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Perfil gamer.Designer.cs">
-      <DependentUpon>Perfil gamer.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Recomendados.cs">
@@ -86,9 +80,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Juego Aleatorio.resx">
       <DependentUpon>Juego Aleatorio.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Perfil gamer.resx">
-      <DependentUpon>Perfil gamer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
