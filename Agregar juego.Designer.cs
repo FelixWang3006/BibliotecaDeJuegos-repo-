@@ -40,23 +40,26 @@
             this.btBiblioteca = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.cbGenero = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.lbDificultad = new System.Windows.Forms.Label();
             this.lbValoracion = new System.Windows.Forms.Label();
-            this.lbEstado = new System.Windows.Forms.Label();
             this.lbPlataforma = new System.Windows.Forms.Label();
             this.lbGenero = new System.Windows.Forms.Label();
             this.lbNombre = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnQuitarSeleccionado = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -92,7 +95,7 @@
             this.button7.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button7.Location = new System.Drawing.Point(12, 229);
+            this.button7.Location = new System.Drawing.Point(12, 121);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(109, 23);
             this.button7.TabIndex = 27;
@@ -118,7 +121,7 @@
             this.button5.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button5.Location = new System.Drawing.Point(12, 121);
+            this.button5.Location = new System.Drawing.Point(12, 71);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(109, 23);
             this.button5.TabIndex = 0;
@@ -192,15 +195,13 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.numericUpDown1);
-            this.groupBox1.Controls.Add(this.comboBox6);
-            this.groupBox1.Controls.Add(this.comboBox4);
+            this.groupBox1.Controls.Add(this.button6);
             this.groupBox1.Controls.Add(this.comboBox3);
             this.groupBox1.Controls.Add(this.cbGenero);
             this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.lbDificultad);
             this.groupBox1.Controls.Add(this.lbValoracion);
-            this.groupBox1.Controls.Add(this.lbEstado);
             this.groupBox1.Controls.Add(this.lbPlataforma);
             this.groupBox1.Controls.Add(this.lbGenero);
             this.groupBox1.Controls.Add(this.lbNombre);
@@ -213,7 +214,7 @@
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(257, 220);
+            this.numericUpDown1.Location = new System.Drawing.Point(128, 126);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             10,
             0,
@@ -232,24 +233,6 @@
             0,
             0,
             0});
-            // 
-            // comboBox6
-            // 
-            this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(82, 147);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(121, 21);
-            this.comboBox6.TabIndex = 16;
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(339, 142);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(121, 21);
-            this.comboBox4.TabIndex = 14;
             // 
             // comboBox3
             // 
@@ -292,32 +275,14 @@
             this.textBox1.Size = new System.Drawing.Size(229, 20);
             this.textBox1.TabIndex = 10;
             // 
-            // lbDificultad
-            // 
-            this.lbDificultad.AutoSize = true;
-            this.lbDificultad.Location = new System.Drawing.Point(259, 145);
-            this.lbDificultad.Name = "lbDificultad";
-            this.lbDificultad.Size = new System.Drawing.Size(51, 13);
-            this.lbDificultad.TabIndex = 6;
-            this.lbDificultad.Text = "Dificultad";
-            // 
             // lbValoracion
             // 
             this.lbValoracion.AutoSize = true;
-            this.lbValoracion.Location = new System.Drawing.Point(145, 222);
+            this.lbValoracion.Location = new System.Drawing.Point(15, 128);
             this.lbValoracion.Name = "lbValoracion";
             this.lbValoracion.Size = new System.Drawing.Size(100, 13);
             this.lbValoracion.TabIndex = 4;
             this.lbValoracion.Text = "Valoración personal";
-            // 
-            // lbEstado
-            // 
-            this.lbEstado.AutoSize = true;
-            this.lbEstado.Location = new System.Drawing.Point(15, 145);
-            this.lbEstado.Name = "lbEstado";
-            this.lbEstado.Size = new System.Drawing.Size(40, 13);
-            this.lbEstado.TabIndex = 3;
-            this.lbEstado.Text = "Estado";
             // 
             // lbPlataforma
             // 
@@ -348,7 +313,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(483, 341);
+            this.button2.Location = new System.Drawing.Point(256, 194);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 9;
@@ -357,20 +322,66 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(313, 341);
+            this.button6.Location = new System.Drawing.Point(94, 194);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(75, 23);
             this.button6.TabIndex = 8;
             this.button6.Text = "Agregar";
             this.button6.UseVisualStyleBackColor = true;
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.label2);
+            this.groupBox3.Controls.Add(this.btnQuitarSeleccionado);
+            this.groupBox3.Controls.Add(this.dataGridView1);
+            this.groupBox3.Location = new System.Drawing.Point(685, 12);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(191, 272);
+            this.groupBox3.TabIndex = 33;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Agregados";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 212);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(105, 13);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Total de agregados: ";
+            // 
+            // btnQuitarSeleccionado
+            // 
+            this.btnQuitarSeleccionado.Location = new System.Drawing.Point(15, 243);
+            this.btnQuitarSeleccionado.Name = "btnQuitarSeleccionado";
+            this.btnQuitarSeleccionado.Size = new System.Drawing.Size(114, 23);
+            this.btnQuitarSeleccionado.TabIndex = 2;
+            this.btnQuitarSeleccionado.Text = "Eliminar";
+            this.btnQuitarSeleccionado.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Nombre});
+            this.dataGridView1.Location = new System.Drawing.Point(15, 40);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(145, 161);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // Nombre
+            // 
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.Name = "Nombre";
+            this.Nombre.ReadOnly = true;
+            // 
             // Agregar_juego
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1133, 669);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
             this.Name = "Agregar_juego";
@@ -380,6 +391,9 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -396,20 +410,21 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label lbDificultad;
         private System.Windows.Forms.Label lbValoracion;
-        private System.Windows.Forms.Label lbEstado;
         private System.Windows.Forms.Label lbPlataforma;
         private System.Windows.Forms.Label lbGenero;
         private System.Windows.Forms.Label lbNombre;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.ComboBox cbGenero;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnQuitarSeleccionado;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
     }
 }

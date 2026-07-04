@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button6 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.chkSoloFavoritos = new System.Windows.Forms.CheckBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -75,12 +74,18 @@
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.button6 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvJuegos)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.panel1.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -99,28 +104,19 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Biblioteca del gamematch";
             // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(278, 219);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(108, 23);
-            this.button6.TabIndex = 7;
-            this.button6.Text = "Ver detalles";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(425, 265);
+            this.button4.Location = new System.Drawing.Point(358, 224);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(108, 23);
             this.button4.TabIndex = 6;
-            this.button4.Text = "Ir al perfil";
+            this.button4.Text = "Quitar favorito";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // chkSoloFavoritos
             // 
             this.chkSoloFavoritos.AutoSize = true;
-            this.chkSoloFavoritos.Location = new System.Drawing.Point(11, 289);
+            this.chkSoloFavoritos.Location = new System.Drawing.Point(17, 278);
             this.chkSoloFavoritos.Name = "chkSoloFavoritos";
             this.chkSoloFavoritos.Size = new System.Drawing.Size(112, 17);
             this.chkSoloFavoritos.TabIndex = 4;
@@ -130,7 +126,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(8, 254);
+            this.label4.Location = new System.Drawing.Point(14, 254);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(95, 13);
             this.label4.TabIndex = 3;
@@ -138,7 +134,7 @@
             // 
             // btnQuitarSeleccionado
             // 
-            this.btnQuitarSeleccionado.Location = new System.Drawing.Point(278, 265);
+            this.btnQuitarSeleccionado.Location = new System.Drawing.Point(215, 224);
             this.btnQuitarSeleccionado.Name = "btnQuitarSeleccionado";
             this.btnQuitarSeleccionado.Size = new System.Drawing.Size(108, 23);
             this.btnQuitarSeleccionado.TabIndex = 2;
@@ -166,7 +162,7 @@
             this.Favorito});
             this.dgvJuegos.Location = new System.Drawing.Point(6, 51);
             this.dgvJuegos.Name = "dgvJuegos";
-            this.dgvJuegos.Size = new System.Drawing.Size(569, 150);
+            this.dgvJuegos.Size = new System.Drawing.Size(544, 150);
             this.dgvJuegos.TabIndex = 0;
             // 
             // Nombre
@@ -210,9 +206,9 @@
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.cbGenero);
             this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Location = new System.Drawing.Point(178, 30);
+            this.groupBox2.Location = new System.Drawing.Point(162, 115);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(652, 231);
+            this.groupBox2.Size = new System.Drawing.Size(594, 231);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Filtros de búsqueda";
@@ -224,7 +220,7 @@
             0,
             0,
             0});
-            this.numericUpDown1.Location = new System.Drawing.Point(170, 138);
+            this.numericUpDown1.Location = new System.Drawing.Point(357, 65);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             10,
             0,
@@ -246,7 +242,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(255, 180);
+            this.button2.Location = new System.Drawing.Point(288, 119);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(123, 23);
             this.button2.TabIndex = 10;
@@ -255,7 +251,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(33, 180);
+            this.button1.Location = new System.Drawing.Point(103, 119);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(123, 23);
             this.button1.TabIndex = 9;
@@ -265,7 +261,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(84, 140);
+            this.label6.Location = new System.Drawing.Point(354, 38);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(57, 13);
             this.label6.TabIndex = 7;
@@ -341,7 +337,7 @@
             this.button5.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button5.Location = new System.Drawing.Point(12, 229);
+            this.button5.Location = new System.Drawing.Point(3, 69);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(109, 23);
             this.button5.TabIndex = 5;
@@ -354,7 +350,7 @@
             this.btAgregar.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btAgregar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btAgregar.Location = new System.Drawing.Point(12, 173);
+            this.btAgregar.Location = new System.Drawing.Point(3, 110);
             this.btAgregar.Name = "btAgregar";
             this.btAgregar.Size = new System.Drawing.Size(109, 23);
             this.btAgregar.TabIndex = 1;
@@ -367,7 +363,7 @@
             this.btBiblioteca.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
             this.btBiblioteca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btBiblioteca.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btBiblioteca.Location = new System.Drawing.Point(12, 121);
+            this.btBiblioteca.Location = new System.Drawing.Point(3, 30);
             this.btBiblioteca.Name = "btBiblioteca";
             this.btBiblioteca.Size = new System.Drawing.Size(109, 23);
             this.btBiblioteca.TabIndex = 0;
@@ -396,12 +392,12 @@
             this.groupBox3.Controls.Add(this.label23);
             this.groupBox3.Controls.Add(this.label24);
             this.groupBox3.Controls.Add(this.label25);
-            this.groupBox3.Location = new System.Drawing.Point(871, 302);
+            this.groupBox3.Location = new System.Drawing.Point(810, 30);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(256, 421);
+            this.groupBox3.Size = new System.Drawing.Size(210, 408);
             this.groupBox3.TabIndex = 12;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Juego recomendado";
+            this.groupBox3.Text = "Detalles";
             // 
             // label2
             // 
@@ -583,11 +579,69 @@
             this.label25.TabIndex = 5;
             this.label25.Text = "Nombre del Juego:";
             // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.comboBox2);
+            this.groupBox4.Controls.Add(this.label28);
+            this.groupBox4.Location = new System.Drawing.Point(162, 26);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(594, 83);
+            this.groupBox4.TabIndex = 13;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Búsqueda GameMatch";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Acción",
+            "Aventura",
+            "Carrera",
+            "Deporte",
+            "Estrategia",
+            "Plataforma",
+            "RPG",
+            "Puzzle"});
+            this.comboBox2.Location = new System.Drawing.Point(126, 30);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 21);
+            this.comboBox2.TabIndex = 4;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(27, 33);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(52, 13);
+            this.label28.TabIndex = 1;
+            this.label28.Text = "Buscador";
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Location = new System.Drawing.Point(810, 491);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(200, 232);
+            this.groupBox5.TabIndex = 14;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Imagen";
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(215, 262);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(108, 23);
+            this.button6.TabIndex = 7;
+            this.button6.Text = "Ver detalles";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1179, 749);
+            this.Controls.Add(this.groupBox5);
+            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
@@ -603,6 +657,8 @@
             this.panel1.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -634,7 +690,6 @@
         private System.Windows.Forms.DataGridViewCheckBoxColumn Favorito;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label7;
@@ -656,6 +711,11 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.Button button6;
     }
 }
 
