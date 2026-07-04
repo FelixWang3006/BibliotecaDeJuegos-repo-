@@ -29,51 +29,83 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.chkSoloFavoritos = new System.Windows.Forms.CheckBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnQuitarSeleccionado = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvJuegos = new System.Windows.Forms.DataGridView();
-            this.btnQuitarSeleccionado = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbPlataforma = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.cbGenero = new System.Windows.Forms.ComboBox();
-            this.txtNombre = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btAleatorio = new System.Windows.Forms.Button();
-            this.btRecomendados = new System.Windows.Forms.Button();
             this.btAgregar = new System.Windows.Forms.Button();
             this.btBiblioteca = new System.Windows.Forms.Button();
-            this.chkSoloFavoritos = new System.Windows.Forms.CheckBox();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Genero = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Plataforma = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Valoración = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Favorito = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.button6 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvJuegos)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button6);
+            this.groupBox1.Controls.Add(this.button4);
             this.groupBox1.Controls.Add(this.chkSoloFavoritos);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.btnQuitarSeleccionado);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.dgvJuegos);
-            this.groupBox1.Location = new System.Drawing.Point(178, 259);
+            this.groupBox1.Location = new System.Drawing.Point(156, 364);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(557, 324);
+            this.groupBox1.Size = new System.Drawing.Size(600, 359);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Mi Biblioteca de Juegos";
+            this.groupBox1.Text = "Biblioteca del gamematch";
+            // 
+            // chkSoloFavoritos
+            // 
+            this.chkSoloFavoritos.AutoSize = true;
+            this.chkSoloFavoritos.Location = new System.Drawing.Point(11, 289);
+            this.chkSoloFavoritos.Name = "chkSoloFavoritos";
+            this.chkSoloFavoritos.Size = new System.Drawing.Size(112, 17);
+            this.chkSoloFavoritos.TabIndex = 4;
+            this.chkSoloFavoritos.Text = "Ver Solo Favoritos";
+            this.chkSoloFavoritos.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
@@ -83,6 +115,15 @@
             this.label4.Size = new System.Drawing.Size(95, 13);
             this.label4.TabIndex = 3;
             this.label4.Text = "Total de Favoritos:";
+            // 
+            // btnQuitarSeleccionado
+            // 
+            this.btnQuitarSeleccionado.Location = new System.Drawing.Point(278, 265);
+            this.btnQuitarSeleccionado.Name = "btnQuitarSeleccionado";
+            this.btnQuitarSeleccionado.Size = new System.Drawing.Size(108, 23);
+            this.btnQuitarSeleccionado.TabIndex = 2;
+            this.btnQuitarSeleccionado.Text = "Agregar al perfil";
+            this.btnQuitarSeleccionado.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -101,44 +142,33 @@
             this.Nombre,
             this.Genero,
             this.Plataforma,
-            this.Estado,
+            this.Valoración,
             this.Favorito});
             this.dgvJuegos.Location = new System.Drawing.Point(6, 51);
             this.dgvJuegos.Name = "dgvJuegos";
-            this.dgvJuegos.Size = new System.Drawing.Size(545, 150);
+            this.dgvJuegos.Size = new System.Drawing.Size(569, 150);
             this.dgvJuegos.TabIndex = 0;
-            // 
-            // btnQuitarSeleccionado
-            // 
-            this.btnQuitarSeleccionado.Location = new System.Drawing.Point(278, 224);
-            this.btnQuitarSeleccionado.Name = "btnQuitarSeleccionado";
-            this.btnQuitarSeleccionado.Size = new System.Drawing.Size(108, 23);
-            this.btnQuitarSeleccionado.TabIndex = 2;
-            this.btnQuitarSeleccionado.Text = "Quitar seleccionado";
-            this.btnQuitarSeleccionado.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.numericUpDown1);
             this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.button1);
-            this.groupBox2.Controls.Add(this.comboBox2);
             this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.comboBox1);
+            this.groupBox2.Controls.Add(this.cbPlataforma);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.cbGenero);
-            this.groupBox2.Controls.Add(this.txtNombre);
             this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Location = new System.Drawing.Point(178, 30);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(654, 205);
+            this.groupBox2.Size = new System.Drawing.Size(652, 231);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Filtros de búsqueda";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(494, 138);
+            this.button2.Location = new System.Drawing.Point(255, 180);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(123, 23);
             this.button2.TabIndex = 10;
@@ -147,54 +177,41 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(494, 86);
+            this.button1.Location = new System.Drawing.Point(33, 180);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(123, 23);
             this.button1.TabIndex = 9;
             this.button1.Text = "Buscar";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // comboBox2
-            // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "Completado",
-            "Jugando",
-            "Abandonado "});
-            this.comboBox2.Location = new System.Drawing.Point(312, 145);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 8;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(237, 148);
+            this.label6.Location = new System.Drawing.Point(84, 140);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(40, 13);
+            this.label6.Size = new System.Drawing.Size(57, 13);
             this.label6.TabIndex = 7;
-            this.label6.Text = "Estado";
+            this.label6.Text = "Valoración";
             // 
-            // comboBox1
+            // cbPlataforma
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbPlataforma.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbPlataforma.FormattingEnabled = true;
+            this.cbPlataforma.Items.AddRange(new object[] {
             "Playstation",
             "Xbox",
             "Nintendo",
             "Steam",
             "Epic games"});
-            this.comboBox1.Location = new System.Drawing.Point(312, 92);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 6;
+            this.cbPlataforma.Location = new System.Drawing.Point(193, 64);
+            this.cbPlataforma.Name = "cbPlataforma";
+            this.cbPlataforma.Size = new System.Drawing.Size(121, 21);
+            this.cbPlataforma.TabIndex = 6;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(237, 96);
+            this.label5.Location = new System.Drawing.Point(190, 39);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(57, 13);
             this.label5.TabIndex = 5;
@@ -213,42 +230,25 @@
             "Plataforma",
             "RPG",
             "Puzzle"});
-            this.cbGenero.Location = new System.Drawing.Point(6, 122);
+            this.cbGenero.Location = new System.Drawing.Point(8, 64);
             this.cbGenero.Name = "cbGenero";
             this.cbGenero.Size = new System.Drawing.Size(121, 21);
             this.cbGenero.TabIndex = 4;
             this.cbGenero.SelectedIndexChanged += new System.EventHandler(this.cbGenero_SelectedIndexChanged);
             // 
-            // txtNombre
-            // 
-            this.txtNombre.Location = new System.Drawing.Point(135, 40);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(213, 20);
-            this.txtNombre.TabIndex = 3;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 96);
+            this.label3.Location = new System.Drawing.Point(8, 38);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(42, 13);
             this.label3.TabIndex = 1;
             this.label3.Text = "Género";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 40);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 13);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Nombre del Juego";
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.panel1.Controls.Add(this.btAleatorio);
-            this.panel1.Controls.Add(this.btRecomendados);
+            this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.btAgregar);
             this.panel1.Controls.Add(this.btBiblioteca);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -256,32 +256,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(150, 749);
             this.panel1.TabIndex = 4;
-            // 
-            // btAleatorio
-            // 
-            this.btAleatorio.BackColor = System.Drawing.Color.Navy;
-            this.btAleatorio.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
-            this.btAleatorio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btAleatorio.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btAleatorio.Location = new System.Drawing.Point(12, 274);
-            this.btAleatorio.Name = "btAleatorio";
-            this.btAleatorio.Size = new System.Drawing.Size(109, 23);
-            this.btAleatorio.TabIndex = 4;
-            this.btAleatorio.Text = "Aleatorio";
-            this.btAleatorio.UseVisualStyleBackColor = false;
-            // 
-            // btRecomendados
-            // 
-            this.btRecomendados.BackColor = System.Drawing.Color.Navy;
-            this.btRecomendados.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btRecomendados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btRecomendados.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btRecomendados.Location = new System.Drawing.Point(12, 224);
-            this.btRecomendados.Name = "btRecomendados";
-            this.btRecomendados.Size = new System.Drawing.Size(109, 23);
-            this.btRecomendados.TabIndex = 2;
-            this.btRecomendados.Text = "Recomendados";
-            this.btRecomendados.UseVisualStyleBackColor = false;
             // 
             // btAgregar
             // 
@@ -309,15 +283,32 @@
             this.btBiblioteca.Text = "Biblioteca";
             this.btBiblioteca.UseVisualStyleBackColor = false;
             // 
-            // chkSoloFavoritos
+            // numericUpDown1
             // 
-            this.chkSoloFavoritos.AutoSize = true;
-            this.chkSoloFavoritos.Location = new System.Drawing.Point(11, 289);
-            this.chkSoloFavoritos.Name = "chkSoloFavoritos";
-            this.chkSoloFavoritos.Size = new System.Drawing.Size(112, 17);
-            this.chkSoloFavoritos.TabIndex = 4;
-            this.chkSoloFavoritos.Text = "Ver Solo Favoritos";
-            this.chkSoloFavoritos.UseVisualStyleBackColor = true;
+            this.numericUpDown1.Increment = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Location = new System.Drawing.Point(170, 138);
+            this.numericUpDown1.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(76, 20);
+            this.numericUpDown1.TabIndex = 18;
+            this.numericUpDown1.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // Nombre
             // 
@@ -337,11 +328,11 @@
             this.Plataforma.Name = "Plataforma";
             this.Plataforma.ReadOnly = true;
             // 
-            // Estado
+            // Valoración
             // 
-            this.Estado.HeaderText = "Estado";
-            this.Estado.Name = "Estado";
-            this.Estado.ReadOnly = true;
+            this.Valoración.HeaderText = "Valoración";
+            this.Valoración.Name = "Valoración";
+            this.Valoración.ReadOnly = true;
             // 
             // Favorito
             // 
@@ -350,11 +341,232 @@
             this.Favorito.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Favorito.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(425, 265);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(108, 23);
+            this.button4.TabIndex = 6;
+            this.button4.Text = "Ir al perfil";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.Navy;
+            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button5.Location = new System.Drawing.Point(12, 229);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(109, 23);
+            this.button5.TabIndex = 5;
+            this.button5.Text = "Perfil Gamer";
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(6, 31);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(96, 13);
+            this.label23.TabIndex = 5;
+            this.label23.Text = "Nombre del Juego:";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(6, 65);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(45, 13);
+            this.label22.TabIndex = 6;
+            this.label22.Text = "Género:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(142, 31);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(58, 13);
+            this.label7.TabIndex = 9;
+            this.label7.Text = "Respuesta";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(142, 65);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(58, 13);
+            this.label8.TabIndex = 10;
+            this.label8.Text = "Respuesta";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(6, 99);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(60, 13);
+            this.label12.TabIndex = 13;
+            this.label12.Text = "Plataforma:";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(142, 99);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(58, 13);
+            this.label11.TabIndex = 14;
+            this.label11.Text = "Respuesta";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(6, 140);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(78, 13);
+            this.label15.TabIndex = 15;
+            this.label15.Text = "Modo de juego";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(7, 178);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(59, 13);
+            this.label14.TabIndex = 16;
+            this.label14.Text = "Subgénero";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(142, 140);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(58, 13);
+            this.label13.TabIndex = 17;
+            this.label13.Text = "Respuesta";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(142, 178);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(58, 13);
+            this.label10.TabIndex = 18;
+            this.label10.Text = "Respuesta";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(6, 218);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(51, 13);
+            this.label9.TabIndex = 19;
+            this.label9.Text = "Dificultad";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(142, 218);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(58, 13);
+            this.label2.TabIndex = 20;
+            this.label2.Text = "Respuesta";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(7, 257);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(50, 13);
+            this.label17.TabIndex = 21;
+            this.label17.Text = "Duración";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(142, 257);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(58, 13);
+            this.label16.TabIndex = 22;
+            this.label16.Text = "Respuesta";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(7, 295);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(63, 13);
+            this.label21.TabIndex = 23;
+            this.label21.Text = "Estilo Visual";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(143, 295);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(58, 13);
+            this.label20.TabIndex = 24;
+            this.label20.Text = "Respuesta";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(8, 334);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(65, 13);
+            this.label19.TabIndex = 25;
+            this.label19.Text = "Experiencia ";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(143, 334);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(58, 13);
+            this.label18.TabIndex = 26;
+            this.label18.Text = "Respuesta";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.label18);
+            this.groupBox3.Controls.Add(this.label19);
+            this.groupBox3.Controls.Add(this.label20);
+            this.groupBox3.Controls.Add(this.label21);
+            this.groupBox3.Controls.Add(this.label16);
+            this.groupBox3.Controls.Add(this.label17);
+            this.groupBox3.Controls.Add(this.label2);
+            this.groupBox3.Controls.Add(this.label9);
+            this.groupBox3.Controls.Add(this.label10);
+            this.groupBox3.Controls.Add(this.label13);
+            this.groupBox3.Controls.Add(this.label14);
+            this.groupBox3.Controls.Add(this.label15);
+            this.groupBox3.Controls.Add(this.label11);
+            this.groupBox3.Controls.Add(this.label12);
+            this.groupBox3.Controls.Add(this.label8);
+            this.groupBox3.Controls.Add(this.label7);
+            this.groupBox3.Controls.Add(this.label22);
+            this.groupBox3.Controls.Add(this.label23);
+            this.groupBox3.Location = new System.Drawing.Point(881, 30);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(256, 363);
+            this.groupBox3.TabIndex = 5;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Juego recomendado";
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(278, 219);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(108, 23);
+            this.button6.TabIndex = 7;
+            this.button6.Text = "Ver detalles";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1179, 749);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
@@ -366,6 +578,9 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -378,27 +593,45 @@
         private System.Windows.Forms.Button btnQuitarSeleccionado;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbGenero;
-        private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btAleatorio;
-        private System.Windows.Forms.Button btRecomendados;
         private System.Windows.Forms.Button btAgregar;
         private System.Windows.Forms.Button btBiblioteca;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbPlataforma;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.CheckBox chkSoloFavoritos;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn Genero;
         private System.Windows.Forms.DataGridViewTextBoxColumn Plataforma;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Valoración;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Favorito;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.GroupBox groupBox3;
     }
 }
 

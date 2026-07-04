@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BibliotecaDeJuegos
 {
-    public partial class Juego_Aleatorio : Form
+    public partial class Perfil_Gamer : Form
     {
-        public Juego_Aleatorio()
+        public Perfil_Gamer()
         {
             InitializeComponent();
         }

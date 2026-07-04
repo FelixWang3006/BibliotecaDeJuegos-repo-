@@ -58,28 +58,22 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Juego Aleatorio.cs">
+    <Compile Include="Perfil Gamer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Juego Aleatorio.Designer.cs">
-      <DependentUpon>Juego Aleatorio.cs</DependentUpon>
+    <Compile Include="Perfil Gamer.Designer.cs">
+      <DependentUpon>Perfil Gamer.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Recomendados.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Recomendados.Designer.cs">
-      <DependentUpon>Recomendados.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Agregar juego.resx">
       <DependentUpon>Agregar juego.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Juego Aleatorio.resx">
-      <DependentUpon>Juego Aleatorio.cs</DependentUpon>
+    <EmbeddedResource Include="Perfil Gamer.resx">
+      <DependentUpon>Perfil Gamer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -91,9 +85,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Recomendados.resx">
-      <DependentUpon>Recomendados.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
