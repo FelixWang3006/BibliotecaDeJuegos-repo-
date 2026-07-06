@@ -17,9 +17,18 @@ namespace BibliotecaDeJuegos
             InitializeComponent();
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void btBibliotecaEnAgregarJuego_Click(object sender, EventArgs e)
         {
+            Form1 form1 = new Form1();
+            form1.Show();
+            this.Hide();
+        }
 
+        private void btPerfilGamerEnAgregarJuego_Click(object sender, EventArgs e)
+        {
+            Perfil_Gamer perfil_gamer = new Perfil_Gamer();
+            perfil_gamer.Show();
+            this.Hide();
         }
     }
 }

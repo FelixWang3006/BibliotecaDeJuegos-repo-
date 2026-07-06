@@ -16,5 +16,19 @@ namespace BibliotecaDeJuegos
         {
             InitializeComponent();
         }
+
+        private void btBibliotecaEnPerfilGamer_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = new Form1();
+            form1.Show();
+            this.Hide();
+        }
+
+        private void btAgregarJuegoEnPerfilGamer_Click(object sender, EventArgs e)
+        {
+            Agregar_juego agregar_juego = new Agregar_juego();
+            agregar_juego.Show();
+            this.Hide();
+        }
     }
 }

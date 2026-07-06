@@ -30,16 +30,18 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btPerfilGamerEnAgregarJuego = new System.Windows.Forms.Button();
+            this.btAgregarJuegoEnAgregarJuego = new System.Windows.Forms.Button();
+            this.btBibliotecaEnAgregarJuego = new System.Windows.Forms.Button();
             this.btAleatorio = new System.Windows.Forms.Button();
             this.btPerfil = new System.Windows.Forms.Button();
             this.btRecomendados = new System.Windows.Forms.Button();
             this.btAgregar = new System.Windows.Forms.Button();
             this.btBiblioteca = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.button6 = new System.Windows.Forms.Button();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.cbGenero = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -47,8 +49,6 @@
             this.lbPlataforma = new System.Windows.Forms.Label();
             this.lbGenero = new System.Windows.Forms.Label();
             this.lbNombre = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnQuitarSeleccionado = new System.Windows.Forms.Button();
@@ -80,53 +80,55 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.panel2.Controls.Add(this.button7);
-            this.panel2.Controls.Add(this.button4);
-            this.panel2.Controls.Add(this.button5);
+            this.panel2.Controls.Add(this.btPerfilGamerEnAgregarJuego);
+            this.panel2.Controls.Add(this.btAgregarJuegoEnAgregarJuego);
+            this.panel2.Controls.Add(this.btBibliotecaEnAgregarJuego);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(150, 669);
             this.panel2.TabIndex = 5;
             // 
-            // button7
+            // btPerfilGamerEnAgregarJuego
             // 
-            this.button7.BackColor = System.Drawing.Color.Navy;
-            this.button7.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button7.Location = new System.Drawing.Point(12, 121);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(109, 23);
-            this.button7.TabIndex = 27;
-            this.button7.Text = "Perfil Gamer";
-            this.button7.UseVisualStyleBackColor = false;
+            this.btPerfilGamerEnAgregarJuego.BackColor = System.Drawing.Color.Navy;
+            this.btPerfilGamerEnAgregarJuego.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
+            this.btPerfilGamerEnAgregarJuego.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btPerfilGamerEnAgregarJuego.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btPerfilGamerEnAgregarJuego.Location = new System.Drawing.Point(21, 121);
+            this.btPerfilGamerEnAgregarJuego.Name = "btPerfilGamerEnAgregarJuego";
+            this.btPerfilGamerEnAgregarJuego.Size = new System.Drawing.Size(109, 23);
+            this.btPerfilGamerEnAgregarJuego.TabIndex = 27;
+            this.btPerfilGamerEnAgregarJuego.Text = "Perfil Gamer";
+            this.btPerfilGamerEnAgregarJuego.UseVisualStyleBackColor = false;
+            this.btPerfilGamerEnAgregarJuego.Click += new System.EventHandler(this.btPerfilGamerEnAgregarJuego_Click);
             // 
-            // button4
+            // btAgregarJuegoEnAgregarJuego
             // 
-            this.button4.BackColor = System.Drawing.Color.Red;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button4.Location = new System.Drawing.Point(12, 173);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(109, 23);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "Agregar Juego";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btAgregarJuegoEnAgregarJuego.BackColor = System.Drawing.Color.Red;
+            this.btAgregarJuegoEnAgregarJuego.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btAgregarJuegoEnAgregarJuego.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btAgregarJuegoEnAgregarJuego.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btAgregarJuegoEnAgregarJuego.Location = new System.Drawing.Point(21, 173);
+            this.btAgregarJuegoEnAgregarJuego.Name = "btAgregarJuegoEnAgregarJuego";
+            this.btAgregarJuegoEnAgregarJuego.Size = new System.Drawing.Size(109, 23);
+            this.btAgregarJuegoEnAgregarJuego.TabIndex = 1;
+            this.btAgregarJuegoEnAgregarJuego.Text = "Agregar Juego";
+            this.btAgregarJuegoEnAgregarJuego.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // btBibliotecaEnAgregarJuego
             // 
-            this.button5.BackColor = System.Drawing.Color.Navy;
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button5.Location = new System.Drawing.Point(12, 71);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(109, 23);
-            this.button5.TabIndex = 0;
-            this.button5.Text = "Biblioteca";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btBibliotecaEnAgregarJuego.BackColor = System.Drawing.Color.Navy;
+            this.btBibliotecaEnAgregarJuego.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
+            this.btBibliotecaEnAgregarJuego.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btBibliotecaEnAgregarJuego.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btBibliotecaEnAgregarJuego.Location = new System.Drawing.Point(21, 71);
+            this.btBibliotecaEnAgregarJuego.Name = "btBibliotecaEnAgregarJuego";
+            this.btBibliotecaEnAgregarJuego.Size = new System.Drawing.Size(109, 23);
+            this.btBibliotecaEnAgregarJuego.TabIndex = 0;
+            this.btBibliotecaEnAgregarJuego.Text = "Biblioteca";
+            this.btBibliotecaEnAgregarJuego.UseVisualStyleBackColor = false;
+            this.btBibliotecaEnAgregarJuego.Click += new System.EventHandler(this.btBibliotecaEnAgregarJuego_Click);
             // 
             // btAleatorio
             // 
@@ -212,6 +214,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del Juego";
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(256, 194);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "Limpiar";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // numericUpDown1
             // 
             this.numericUpDown1.Location = new System.Drawing.Point(128, 126);
@@ -233,6 +244,15 @@
             0,
             0,
             0});
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(94, 194);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.TabIndex = 8;
+            this.button6.Text = "Agregar";
+            this.button6.UseVisualStyleBackColor = true;
             // 
             // comboBox3
             // 
@@ -266,7 +286,6 @@
             this.cbGenero.Name = "cbGenero";
             this.cbGenero.Size = new System.Drawing.Size(121, 21);
             this.cbGenero.TabIndex = 11;
-            this.cbGenero.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // textBox1
             // 
@@ -310,24 +329,6 @@
             this.lbNombre.Size = new System.Drawing.Size(90, 13);
             this.lbNombre.TabIndex = 0;
             this.lbNombre.Text = "Nombre del juego";
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(256, 194);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Limpiar";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(94, 194);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 8;
-            this.button6.Text = "Agregar";
-            this.button6.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
@@ -384,8 +385,9 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
             this.Name = "Agregar_juego";
-            this.Text = "Agregar_juego";
+            this.Text = "Agregar Juego";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
@@ -407,8 +409,8 @@
         private System.Windows.Forms.Button btRecomendados;
         private System.Windows.Forms.Button btAgregar;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btAgregarJuegoEnAgregarJuego;
+        private System.Windows.Forms.Button btBibliotecaEnAgregarJuego;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label lbValoracion;
         private System.Windows.Forms.Label lbPlataforma;
@@ -420,7 +422,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button btPerfilGamerEnAgregarJuego;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnQuitarSeleccionado;

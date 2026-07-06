@@ -81,7 +81,7 @@ The Talos Principle;Puzzle;Puzle en Primera Persona;PC;Alta;Larga;Fotorrealismo;
 Professor Layton and the Curious Village;Puzzle;Acertijos;Nintendo DS;Media;Media;Cartoon;Puzzle;Alta;8.5
 Catherine;Puzzle;Caída de Bloques;PlayStation 3;Alta;Media;Cel Shading;Puzzle;Alta;8.2
 World of Goo;Puzzle;Físicas;Nintendo Wii;Media;Corta;Estilizado;Puzzle;Alta;9.0
-Lemmings;Puzzle;Lógica;Amiga;Alta;Media;Pixel Art;Puzzle;Alta;8.5
+Lemmings: Puzzle Survival;Puzzle;Lógica;Móviles;Alta;Media;Estilizado;Puzzle;Alta;8.5
 The Room;Puzzle;Escape Room;PC;Media;Corta;Fotorrealismo;Puzzle;Alta;8.8
 Tetris Effect: Connected;Puzzle;Caída de Bloques;PlayStation 4;Media;Larga;Estilizado;Puzzle;Alta;8.8
 The Witcher 3: Wild Hunt;RPG;Action RPG;PlayStation 4;Media;Larga;Fotorrealismo;Historia;Alta;9.3

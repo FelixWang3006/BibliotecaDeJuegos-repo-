@@ -30,9 +30,9 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btPerfilGamerEnPerfilGamer = new System.Windows.Forms.Button();
+            this.btAgregarJuegoEnPerfilGamer = new System.Windows.Forms.Button();
+            this.btBibliotecaEnPerfilGamer = new System.Windows.Forms.Button();
             this.btAleatorio = new System.Windows.Forms.Button();
             this.btPerfil = new System.Windows.Forms.Button();
             this.btRecomendados = new System.Windows.Forms.Button();
@@ -51,18 +51,18 @@
             this.Popularidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Puntuación = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnQuitarSeleccionado = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Favorito = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -91,53 +91,55 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.panel2.Controls.Add(this.button7);
-            this.panel2.Controls.Add(this.button4);
-            this.panel2.Controls.Add(this.button5);
+            this.panel2.Controls.Add(this.btPerfilGamerEnPerfilGamer);
+            this.panel2.Controls.Add(this.btAgregarJuegoEnPerfilGamer);
+            this.panel2.Controls.Add(this.btBibliotecaEnPerfilGamer);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(150, 749);
             this.panel2.TabIndex = 5;
             // 
-            // button7
+            // btPerfilGamerEnPerfilGamer
             // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button7.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button7.Location = new System.Drawing.Point(12, 92);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(109, 23);
-            this.button7.TabIndex = 27;
-            this.button7.Text = "Perfil Gamer";
-            this.button7.UseVisualStyleBackColor = false;
+            this.btPerfilGamerEnPerfilGamer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btPerfilGamerEnPerfilGamer.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
+            this.btPerfilGamerEnPerfilGamer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btPerfilGamerEnPerfilGamer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btPerfilGamerEnPerfilGamer.Location = new System.Drawing.Point(21, 92);
+            this.btPerfilGamerEnPerfilGamer.Name = "btPerfilGamerEnPerfilGamer";
+            this.btPerfilGamerEnPerfilGamer.Size = new System.Drawing.Size(109, 23);
+            this.btPerfilGamerEnPerfilGamer.TabIndex = 27;
+            this.btPerfilGamerEnPerfilGamer.Text = "Perfil Gamer";
+            this.btPerfilGamerEnPerfilGamer.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // btAgregarJuegoEnPerfilGamer
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.button4.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button4.Location = new System.Drawing.Point(12, 133);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(109, 23);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "Agregar Juego";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btAgregarJuegoEnPerfilGamer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btAgregarJuegoEnPerfilGamer.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btAgregarJuegoEnPerfilGamer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btAgregarJuegoEnPerfilGamer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btAgregarJuegoEnPerfilGamer.Location = new System.Drawing.Point(21, 133);
+            this.btAgregarJuegoEnPerfilGamer.Name = "btAgregarJuegoEnPerfilGamer";
+            this.btAgregarJuegoEnPerfilGamer.Size = new System.Drawing.Size(109, 23);
+            this.btAgregarJuegoEnPerfilGamer.TabIndex = 1;
+            this.btAgregarJuegoEnPerfilGamer.Text = "Agregar Juego";
+            this.btAgregarJuegoEnPerfilGamer.UseVisualStyleBackColor = false;
+            this.btAgregarJuegoEnPerfilGamer.Click += new System.EventHandler(this.btAgregarJuegoEnPerfilGamer_Click);
             // 
-            // button5
+            // btBibliotecaEnPerfilGamer
             // 
-            this.button5.BackColor = System.Drawing.Color.Navy;
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button5.Location = new System.Drawing.Point(12, 50);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(109, 23);
-            this.button5.TabIndex = 0;
-            this.button5.Text = "Biblioteca";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btBibliotecaEnPerfilGamer.BackColor = System.Drawing.Color.Navy;
+            this.btBibliotecaEnPerfilGamer.FlatAppearance.BorderColor = System.Drawing.Color.Azure;
+            this.btBibliotecaEnPerfilGamer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btBibliotecaEnPerfilGamer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btBibliotecaEnPerfilGamer.Location = new System.Drawing.Point(21, 50);
+            this.btBibliotecaEnPerfilGamer.Name = "btBibliotecaEnPerfilGamer";
+            this.btBibliotecaEnPerfilGamer.Size = new System.Drawing.Size(109, 23);
+            this.btBibliotecaEnPerfilGamer.TabIndex = 0;
+            this.btBibliotecaEnPerfilGamer.Text = "Biblioteca";
+            this.btBibliotecaEnPerfilGamer.UseVisualStyleBackColor = false;
+            this.btBibliotecaEnPerfilGamer.Click += new System.EventHandler(this.btBibliotecaEnPerfilGamer_Click);
             // 
             // btAleatorio
             // 
@@ -301,6 +303,24 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Agregados al perfil";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(161, 71);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(16, 13);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Si";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(61, 71);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(72, 13);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Hollow Knight";
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -354,6 +374,15 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Mis favoritos";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(19, 61);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(59, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Call of duty";
+            // 
             // groupBox4
             // 
             this.groupBox4.Location = new System.Drawing.Point(730, 255);
@@ -373,15 +402,6 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Perfil Gamer";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(19, 61);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Call of duty";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -391,24 +411,6 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Juegos en perfil: 12\nFavoritos: 4\nGénero más frecuente: RPG\nPlataforma favorita: " +
     "PC\nValoración promedio: 8.7";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(61, 71);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(72, 13);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Hollow Knight";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(161, 71);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(16, 13);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Si";
             // 
             // Perfil_Gamer
             // 
@@ -421,8 +423,9 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
             this.Name = "Perfil_Gamer";
-            this.Text = "Perfil_Gamer";
+            this.Text = "Perfil Gamer";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
@@ -441,9 +444,9 @@
         #endregion
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btPerfilGamerEnPerfilGamer;
+        private System.Windows.Forms.Button btAgregarJuegoEnPerfilGamer;
+        private System.Windows.Forms.Button btBibliotecaEnPerfilGamer;
         private System.Windows.Forms.Button btAleatorio;
         private System.Windows.Forms.Button btPerfil;
         private System.Windows.Forms.Button btRecomendados;
