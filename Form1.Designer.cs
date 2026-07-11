@@ -63,6 +63,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.White;
             this.groupBox1.Controls.Add(this.btVerDetalles);
             this.groupBox1.Controls.Add(this.btAgregarPerfil);
             this.groupBox1.Controls.Add(this.lbTotalJuegos);
@@ -76,41 +77,56 @@
             // 
             // btVerDetalles
             // 
+            this.btVerDetalles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            this.btVerDetalles.Enabled = false;
+            this.btVerDetalles.FlatAppearance.BorderSize = 0;
+            this.btVerDetalles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btVerDetalles.ForeColor = System.Drawing.Color.White;
             this.btVerDetalles.Location = new System.Drawing.Point(139, 238);
             this.btVerDetalles.Name = "btVerDetalles";
             this.btVerDetalles.Size = new System.Drawing.Size(108, 23);
             this.btVerDetalles.TabIndex = 7;
             this.btVerDetalles.Text = "Ver detalles";
-            this.btVerDetalles.UseVisualStyleBackColor = true;
+            this.btVerDetalles.UseVisualStyleBackColor = false;
             this.btVerDetalles.Click += new System.EventHandler(this.btVerDetalles_Click);
             // 
             // btAgregarPerfil
             // 
+            this.btAgregarPerfil.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(163)))), ((int)(((byte)(74)))));
+            this.btAgregarPerfil.Enabled = false;
+            this.btAgregarPerfil.FlatAppearance.BorderSize = 0;
+            this.btAgregarPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btAgregarPerfil.ForeColor = System.Drawing.Color.White;
             this.btAgregarPerfil.Location = new System.Drawing.Point(139, 200);
             this.btAgregarPerfil.Name = "btAgregarPerfil";
             this.btAgregarPerfil.Size = new System.Drawing.Size(108, 23);
             this.btAgregarPerfil.TabIndex = 2;
             this.btAgregarPerfil.Text = "Agregar al perfil";
-            this.btAgregarPerfil.UseVisualStyleBackColor = true;
+            this.btAgregarPerfil.UseVisualStyleBackColor = false;
             // 
             // lbTotalJuegos
             // 
             this.lbTotalJuegos.AutoSize = true;
+            this.lbTotalJuegos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTotalJuegos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(64)))), ((int)(((byte)(175)))));
             this.lbTotalJuegos.Location = new System.Drawing.Point(14, 205);
             this.lbTotalJuegos.Name = "lbTotalJuegos";
             this.lbTotalJuegos.Size = new System.Drawing.Size(110, 13);
             this.lbTotalJuegos.TabIndex = 1;
-            this.lbTotalJuegos.Text = "Total de Juegos: ###";
+            this.lbTotalJuegos.Text = "Total de juegos: 0";
             // 
             // dgvJuegos
             // 
             this.dgvJuegos.AllowUserToAddRows = false;
             this.dgvJuegos.AllowUserToDeleteRows = false;
             this.dgvJuegos.AllowUserToResizeRows = false;
+            this.dgvJuegos.AlternatingRowsDefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
+            this.dgvJuegos.BackgroundColor = System.Drawing.Color.White;
+            this.dgvJuegos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
@@ -129,10 +145,13 @@
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvJuegos.DefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvJuegos.EnableHeadersVisualStyles = false;
             this.dgvJuegos.Location = new System.Drawing.Point(6, 21);
             this.dgvJuegos.MultiSelect = false;
             this.dgvJuegos.Name = "dgvJuegos";
             this.dgvJuegos.ReadOnly = true;
+            this.dgvJuegos.RowHeadersVisible = false;
+            this.dgvJuegos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvJuegos.Size = new System.Drawing.Size(544, 150);
             this.dgvJuegos.TabIndex = 0;
             // 
@@ -166,6 +185,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.White;
             this.groupBox2.Controls.Add(this.cbValoración);
             this.groupBox2.Controls.Add(this.btLimpiar);
             this.groupBox2.Controls.Add(this.btBuscar);
@@ -213,12 +233,16 @@
             // 
             // btBuscar
             // 
+            this.btBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(99)))), ((int)(((byte)(235)))));
+            this.btBuscar.FlatAppearance.BorderSize = 0;
+            this.btBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btBuscar.ForeColor = System.Drawing.Color.White;
             this.btBuscar.Location = new System.Drawing.Point(31, 73);
             this.btBuscar.Name = "btBuscar";
             this.btBuscar.Size = new System.Drawing.Size(123, 23);
             this.btBuscar.TabIndex = 9;
             this.btBuscar.Text = "Buscar";
-            this.btBuscar.UseVisualStyleBackColor = true;
+            this.btBuscar.UseVisualStyleBackColor = false;
             this.btBuscar.Click += new System.EventHandler(this.btBuscar_Click);
             // 
             // label6
@@ -339,6 +363,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.BackColor = System.Drawing.Color.White;
             this.groupBox3.Controls.Add(this.liboDetalles);
             this.groupBox3.Location = new System.Drawing.Point(737, 27);
             this.groupBox3.Name = "groupBox3";
@@ -359,6 +384,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
             this.ClientSize = new System.Drawing.Size(963, 463);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.panel1);
