@@ -13,13 +13,13 @@ namespace BibliotecaDeJuegos
             InitializeComponent();
 
             this.Load += Agregar_juego_Load;
-            button2.Click += button2_Click;
+            btnLimpiar.Click += btnLimpiar_Click;
             btnQuitarSeleccionado.Click += btnQuitarSeleccionado_Click;
-            textBox1.KeyPress += textBox1_KeyPress;
-            textBox1.TextChanged += CamposJuego_Cambiaron;
+            txtNombreJuego.KeyPress += txtNombreJuego_KeyPress;
+            txtNombreJuego.TextChanged += CamposJuego_Cambiaron;
             cbGenero.SelectedIndexChanged += CamposJuego_Cambiaron;
-            comboBox3.SelectedIndexChanged += CamposJuego_Cambiaron;
-            dataGridView1.SelectionChanged += dataGridView1_SelectionChanged;
+            cbPlataforma.SelectedIndexChanged += CamposJuego_Cambiaron;
+            dgvAgregados.SelectionChanged += dgvAgregados_SelectionChanged;
             this.KeyDown += Agregar_juego_KeyDown;
             this.FormClosed += Ventana_FormClosed;
 
@@ -37,17 +37,17 @@ namespace BibliotecaDeJuegos
             groupBox3.BackColor = Color.Transparent;
 
          
-            button6.FlatStyle = FlatStyle.Flat;
-            button6.FlatAppearance.BorderSize = 0;
-            button6.Enabled = false;
-            button6.BackColor = Color.FromArgb(80, 60, 120); 
-            button6.ForeColor = Color.FromArgb(180, 180, 180); 
+            btnAgregar.FlatStyle = FlatStyle.Flat;
+            btnAgregar.FlatAppearance.BorderSize = 0;
+            btnAgregar.Enabled = false;
+            btnAgregar.BackColor = Color.FromArgb(80, 60, 120); 
+            btnAgregar.ForeColor = Color.FromArgb(180, 180, 180); 
 
            
-            button2.BackColor = Color.FromArgb(71, 85, 105); 
-            button2.ForeColor = Color.White;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.FlatAppearance.BorderSize = 0;
+            btnLimpiar.BackColor = Color.FromArgb(71, 85, 105); 
+            btnLimpiar.ForeColor = Color.White;
+            btnLimpiar.FlatStyle = FlatStyle.Flat;
+            btnLimpiar.FlatAppearance.BorderSize = 0;
 
             
             btnQuitarSeleccionado.FlatStyle = FlatStyle.Flat;
@@ -57,52 +57,52 @@ namespace BibliotecaDeJuegos
             btnQuitarSeleccionado.ForeColor = Color.FromArgb(180, 180, 180);
 
            
-            dataGridView1.BackgroundColor = Color.FromArgb(30, 41, 59); 
-            dataGridView1.BorderStyle = BorderStyle.None;
-            dataGridView1.RowHeadersVisible = false;
-            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridView1.MultiSelect = false;
+            dgvAgregados.BackgroundColor = Color.FromArgb(30, 41, 59); 
+            dgvAgregados.BorderStyle = BorderStyle.None;
+            dgvAgregados.RowHeadersVisible = false;
+            dgvAgregados.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvAgregados.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvAgregados.MultiSelect = false;
 
             
-            dataGridView1.EnableHeadersVisualStyles = false;
-            dataGridView1.ColumnHeadersVisible = true;
+            dgvAgregados.EnableHeadersVisualStyles = false;
+            dgvAgregados.ColumnHeadersVisible = true;
 
            
-            dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(139, 92, 246);
-            dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
-            dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font(dataGridView1.Font, FontStyle.Bold);
+            dgvAgregados.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(139, 92, 246);
+            dgvAgregados.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dgvAgregados.ColumnHeadersDefaultCellStyle.Font = new Font(dgvAgregados.Font, FontStyle.Bold);
 
             
-            dataGridView1.DefaultCellStyle.BackColor = Color.FromArgb(30, 41, 59);
-            dataGridView1.DefaultCellStyle.ForeColor = Color.White;
-            dataGridView1.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(39, 51, 71); 
+            dgvAgregados.DefaultCellStyle.BackColor = Color.FromArgb(30, 41, 59);
+            dgvAgregados.DefaultCellStyle.ForeColor = Color.White;
+            dgvAgregados.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(39, 51, 71); 
 
-            dataGridView1.DefaultCellStyle.SelectionBackColor = Color.FromArgb(124, 58, 237); 
-            dataGridView1.DefaultCellStyle.SelectionForeColor = Color.White;
+            dgvAgregados.DefaultCellStyle.SelectionBackColor = Color.FromArgb(124, 58, 237); 
+            dgvAgregados.DefaultCellStyle.SelectionForeColor = Color.White;
 
-            textBox1.MaxLength = 80;
+            txtNombreJuego.MaxLength = 80;
 
-            ayuda.SetToolTip(textBox1, "Escriba un nombre unico para el juego.");
-            ayuda.SetToolTip(cbGenero, "Use el mismo genero disponible en la Biblioteca.");
-            ayuda.SetToolTip(comboBox3, "Las plataformas coinciden con el filtro de Biblioteca.");
-            ayuda.SetToolTip(numValoracion, "Valoracion personal entre 1 y 10.");
-            ayuda.SetToolTip(button6, "Guardar el juego (tambien puede presionar Enter).");
+            ayuda.SetToolTip(txtNombreJuego, "Escriba un nombre único para el juego.");
+            ayuda.SetToolTip(cbGenero, "Use el mismo género disponible en la Biblioteca.");
+            ayuda.SetToolTip(cbPlataforma, "Las plataformas coinciden con el filtro de Biblioteca.");
+            ayuda.SetToolTip(nudValoracion, "Valoración personal entre 1 y 10.");
+            ayuda.SetToolTip(btnAgregar, "Guardar el juego (también puede presionar Enter).");
         }
 
         private void Agregar_juego_Load(object sender, EventArgs e)
         {
-            dataGridView1.Rows.Clear();
-            label2.Text = "Total de agregados: 0";
+            dgvAgregados.Rows.Clear();
+            lbTotalAgregados.Text = "Total de agregados: 0";
 
             try
             {
                 DatosGameMatch.CargarBiblioteca();
-                dataGridView1.ReadOnly = true;
-                dataGridView1.MultiSelect = false;
-                dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+                dgvAgregados.ReadOnly = true;
+                dgvAgregados.MultiSelect = false;
+                dgvAgregados.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
                 MostrarJuegosAgregados();
-                textBox1.Focus();
+                txtNombreJuego.Focus();
             }
             catch (Exception ex)
             {
@@ -111,14 +111,14 @@ namespace BibliotecaDeJuegos
             }
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void btnAgregar_Click(object sender, EventArgs e)
         {
             try
             {
-                string nombre = textBox1.Text.Trim();
+                string nombre = txtNombreJuego.Text.Trim();
                 string genero = ObtenerGeneroValido(cbGenero.Text);
-                string plataforma = ObtenerPlataformaValida(comboBox3.Text);
-                double valoracion = Convert.ToDouble(numValoracion.Value);
+                string plataforma = ObtenerPlataformaValida(cbPlataforma.Text);
+                double valoracion = Convert.ToDouble(nudValoracion.Value);
 
                 if (nombre.Contains(";"))
                 {
@@ -142,7 +142,7 @@ namespace BibliotecaDeJuegos
             {
                 lbEstadoFormulario.ForeColor = Color.FromArgb(220, 38, 38);
                 lbEstadoFormulario.Text = ex.Message;
-                MessageBox.Show(ex.Message, "Dato invalido",
+                MessageBox.Show(ex.Message, "Dato inválido",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             catch (Exception ex)
@@ -168,7 +168,7 @@ namespace BibliotecaDeJuegos
         {
             if (genero == "")
             {
-                throw new ArgumentException("Debe seleccionar el genero.");
+                throw new ArgumentException("Debe seleccionar el género.");
             }
 
             return genero;
@@ -176,33 +176,33 @@ namespace BibliotecaDeJuegos
 
         private void MostrarJuegosAgregados()
         {
-            dataGridView1.Rows.Clear();
+            dgvAgregados.Rows.Clear();
             int total = 0;
 
             for (int i = 0; i < DatosGameMatch.Biblioteca.Count; i++)
             {
                 if (DatosGameMatch.Biblioteca[i].EsAgregadoPorUsuario())
                 {
-                    dataGridView1.Rows.Add(DatosGameMatch.Biblioteca[i].Nombre);
+                    dgvAgregados.Rows.Add(DatosGameMatch.Biblioteca[i].Nombre);
                     total++;
                 }
             }
 
-            label2.Text = "Total de agregados: " + total;
+            lbTotalAgregados.Text = "Total de agregados: " + total;
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnLimpiar_Click(object sender, EventArgs e)
         {
             LimpiarCampos();
         }
 
         private void LimpiarCampos()
         {
-            textBox1.Clear();
+            txtNombreJuego.Clear();
             cbGenero.SelectedIndex = -1;
-            comboBox3.SelectedIndex = -1;
-            numValoracion.Value = 1;
-            textBox1.Focus();
+            cbPlataforma.SelectedIndex = -1;
+            nudValoracion.Value = 1;
+            txtNombreJuego.Focus();
 
            
             CamposJuego_Cambiaron(null, null);
@@ -212,17 +212,17 @@ namespace BibliotecaDeJuegos
 
         private void CamposJuego_Cambiaron(object sender, EventArgs e)
         {
-            bool camposValidos = !string.IsNullOrWhiteSpace(textBox1.Text) &&
+            bool camposValidos = !string.IsNullOrWhiteSpace(txtNombreJuego.Text) &&
                          cbGenero.SelectedIndex != -1 &&
-                         comboBox3.SelectedIndex != -1;
+                         cbPlataforma.SelectedIndex != -1;
 
-            button6.Enabled = camposValidos;
+            btnAgregar.Enabled = camposValidos;
 
             if (camposValidos)
             {
                 
-                button6.BackColor = Color.FromArgb(124, 58, 237);
-                button6.ForeColor = Color.White;
+                btnAgregar.BackColor = Color.FromArgb(124, 58, 237);
+                btnAgregar.ForeColor = Color.White;
 
                 if (lbEstadoFormulario != null)
                 {
@@ -233,21 +233,21 @@ namespace BibliotecaDeJuegos
             else
             {
           
-                button6.BackColor = Color.FromArgb(80, 60, 120);
-                button6.ForeColor = Color.FromArgb(180, 180, 180);
+                btnAgregar.BackColor = Color.FromArgb(80, 60, 120);
+                btnAgregar.ForeColor = Color.FromArgb(180, 180, 180);
 
                 if (lbEstadoFormulario != null)
                 {
                     lbEstadoFormulario.ForeColor = Color.FromArgb(148, 163, 184);
-                    lbEstadoFormulario.Text = "Complete los datos para habilitar el boton Agregar.";
+                    lbEstadoFormulario.Text = "Complete los datos para habilitar el botón Agregar.";
                 }
             }
         }
         
 
-        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
+        private void dgvAgregados_SelectionChanged(object sender, EventArgs e)
         {
-            bool haySeleccion = dataGridView1.SelectedRows.Count > 0;
+            bool haySeleccion = dgvAgregados.SelectedRows.Count > 0;
             btnQuitarSeleccionado.Enabled = haySeleccion;
 
             if (haySeleccion)
@@ -266,9 +266,9 @@ namespace BibliotecaDeJuegos
 
         private void Agregar_juego_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter && button6.Enabled)
+            if (e.KeyCode == Keys.Enter && btnAgregar.Enabled)
             {
-                button6.PerformClick();
+                btnAgregar.PerformClick();
                 e.SuppressKeyPress = true;
             }
             else if (e.KeyCode == Keys.Escape)
@@ -282,14 +282,14 @@ namespace BibliotecaDeJuegos
         {
             try
             {
-                if (dataGridView1.SelectedRows.Count == 0)
+                if (dgvAgregados.SelectedRows.Count == 0)
                 {
                     throw new ArgumentException("Seleccione un juego agregado para eliminarlo.");
                 }
 
-                string nombre = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+                string nombre = dgvAgregados.SelectedRows[0].Cells[0].Value.ToString();
                 DialogResult respuesta = MessageBox.Show("¿Desea eliminar " + nombre + "?",
-                    "Confirmar eliminacion", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    "Confirmar eliminación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
                 if (respuesta == DialogResult.Yes)
                 {
@@ -299,7 +299,7 @@ namespace BibliotecaDeJuegos
             }
             catch (ArgumentException ex)
             {
-                MessageBox.Show(ex.Message, "Dato invalido",
+                MessageBox.Show(ex.Message, "Dato inválido",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             catch (Exception ex)
@@ -309,7 +309,7 @@ namespace BibliotecaDeJuegos
             }
         }
 
-        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        private void txtNombreJuego_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == ';')
             {
@@ -336,7 +336,7 @@ namespace BibliotecaDeJuegos
             Application.Exit();
         }
 
-        private void numValoracion_KeyPress(object sender, KeyPressEventArgs e)
+        private void nudValoracion_KeyPress(object sender, KeyPressEventArgs e)
         {
             
             if (e.KeyChar == (char)Keys.Back)
@@ -363,12 +363,12 @@ namespace BibliotecaDeJuegos
             }
         }
 
-        private void numValoracion_Enter(object sender, EventArgs e)
+        private void nudValoracion_Enter(object sender, EventArgs e)
         {
           
             this.BeginInvoke((MethodInvoker)delegate
             {
-                numValoracion.Select(numValoracion.Text.Length, 0);
+                nudValoracion.Select(nudValoracion.Text.Length, 0);
             });
         }
     }

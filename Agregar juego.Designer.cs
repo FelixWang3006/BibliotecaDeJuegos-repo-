@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Agregar_juego));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btPerfilGamerEnAgregarJuego = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
@@ -39,27 +39,27 @@
             this.btBibliotecaEnAgregarJuego = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lbEstadoFormulario = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.numValoracion = new System.Windows.Forms.NumericUpDown();
-            this.button6 = new System.Windows.Forms.Button();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.nudValoracion = new System.Windows.Forms.NumericUpDown();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.cbPlataforma = new System.Windows.Forms.ComboBox();
             this.cbGenero = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNombreJuego = new System.Windows.Forms.TextBox();
             this.lbValoracion = new System.Windows.Forms.Label();
             this.lbPlataforma = new System.Windows.Forms.Label();
             this.lbGenero = new System.Windows.Forms.Label();
             this.lbNombre = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbTotalAgregados = new System.Windows.Forms.Label();
             this.btnQuitarSeleccionado = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvAgregados = new System.Windows.Forms.DataGridView();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pbLogo = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numValoracion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudValoracion)).BeginInit();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAgregados)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -144,12 +144,12 @@
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
             this.groupBox1.Controls.Add(this.lbEstadoFormulario);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.numValoracion);
-            this.groupBox1.Controls.Add(this.button6);
-            this.groupBox1.Controls.Add(this.comboBox3);
+            this.groupBox1.Controls.Add(this.btnLimpiar);
+            this.groupBox1.Controls.Add(this.nudValoracion);
+            this.groupBox1.Controls.Add(this.btnAgregar);
+            this.groupBox1.Controls.Add(this.cbPlataforma);
             this.groupBox1.Controls.Add(this.cbGenero);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtNombreJuego);
             this.groupBox1.Controls.Add(this.lbValoracion);
             this.groupBox1.Controls.Add(this.lbPlataforma);
             this.groupBox1.Controls.Add(this.lbGenero);
@@ -171,80 +171,81 @@
             this.lbEstadoFormulario.Name = "lbEstadoFormulario";
             this.lbEstadoFormulario.Size = new System.Drawing.Size(438, 20);
             this.lbEstadoFormulario.TabIndex = 18;
-            this.lbEstadoFormulario.Text = "Complete los datos para habilitar el boton Agregar.";
+            this.lbEstadoFormulario.Text = "Complete los datos para habilitar el botón Agregar.";
             // 
-            // button2
+            // btnLimpiar
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(294, 194);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(93, 23);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Limpiar";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnLimpiar.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnLimpiar.FlatAppearance.BorderSize = 0;
+            this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpiar.Location = new System.Drawing.Point(294, 194);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(93, 23);
+            this.btnLimpiar.TabIndex = 9;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
-            // numValoracion
+            // nudValoracion
             // 
-            this.numValoracion.BackColor = System.Drawing.Color.White;
-            this.numValoracion.DecimalPlaces = 1;
-            this.numValoracion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
-            this.numValoracion.Location = new System.Drawing.Point(128, 126);
-            this.numValoracion.Maximum = new decimal(new int[] {
+            this.nudValoracion.BackColor = System.Drawing.Color.White;
+            this.nudValoracion.DecimalPlaces = 1;
+            this.nudValoracion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
+            this.nudValoracion.Location = new System.Drawing.Point(128, 126);
+            this.nudValoracion.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             131072});
-            this.numValoracion.Minimum = new decimal(new int[] {
+            this.nudValoracion.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numValoracion.Name = "numValoracion";
-            this.numValoracion.Size = new System.Drawing.Size(76, 22);
-            this.numValoracion.TabIndex = 17;
-            this.numValoracion.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.numValoracion.Value = new decimal(new int[] {
+            this.nudValoracion.Name = "nudValoracion";
+            this.nudValoracion.Size = new System.Drawing.Size(76, 22);
+            this.nudValoracion.TabIndex = 17;
+            this.nudValoracion.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.nudValoracion.Value = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numValoracion.Enter += new System.EventHandler(this.numValoracion_Enter);
-            this.numValoracion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.numValoracion_KeyPress);
+            this.nudValoracion.Enter += new System.EventHandler(this.nudValoracion_Enter);
+            this.nudValoracion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.nudValoracion_KeyPress);
             // 
-            // button6
+            // btnAgregar
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(58)))), ((int)(((byte)(237)))));
-            this.button6.Enabled = false;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(106, 194);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(98, 23);
-            this.button6.TabIndex = 8;
-            this.button6.Text = "Agregar";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(58)))), ((int)(((byte)(237)))));
+            this.btnAgregar.Enabled = false;
+            this.btnAgregar.FlatAppearance.BorderSize = 0;
+            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregar.ForeColor = System.Drawing.Color.White;
+            this.btnAgregar.Location = new System.Drawing.Point(106, 194);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(98, 23);
+            this.btnAgregar.TabIndex = 8;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
-            // comboBox3
+            // cbPlataforma
             // 
-            this.comboBox3.BackColor = System.Drawing.Color.White;
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.cbPlataforma.BackColor = System.Drawing.Color.White;
+            this.cbPlataforma.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbPlataforma.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
+            this.cbPlataforma.FormattingEnabled = true;
+            this.cbPlataforma.Items.AddRange(new object[] {
             "Móviles",
             "Nintendo",
             "PlayStation",
             "PC",
             "Sega Genesis",
             "Xbox"});
-            this.comboBox3.Location = new System.Drawing.Point(339, 82);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 21);
-            this.comboBox3.TabIndex = 13;
+            this.cbPlataforma.Location = new System.Drawing.Point(339, 82);
+            this.cbPlataforma.Name = "cbPlataforma";
+            this.cbPlataforma.Size = new System.Drawing.Size(121, 21);
+            this.cbPlataforma.TabIndex = 13;
             // 
             // cbGenero
             // 
@@ -266,15 +267,15 @@
             this.cbGenero.Size = new System.Drawing.Size(121, 21);
             this.cbGenero.TabIndex = 11;
             // 
-            // textBox1
+            // txtNombreJuego
             // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
-            this.textBox1.Location = new System.Drawing.Point(158, 37);
-            this.textBox1.MaxLength = 80;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(229, 22);
-            this.textBox1.TabIndex = 10;
+            this.txtNombreJuego.BackColor = System.Drawing.Color.White;
+            this.txtNombreJuego.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
+            this.txtNombreJuego.Location = new System.Drawing.Point(158, 37);
+            this.txtNombreJuego.MaxLength = 80;
+            this.txtNombreJuego.Name = "txtNombreJuego";
+            this.txtNombreJuego.Size = new System.Drawing.Size(229, 22);
+            this.txtNombreJuego.TabIndex = 10;
             // 
             // lbValoracion
             // 
@@ -315,9 +316,9 @@
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
-            this.groupBox3.Controls.Add(this.label2);
+            this.groupBox3.Controls.Add(this.lbTotalAgregados);
             this.groupBox3.Controls.Add(this.btnQuitarSeleccionado);
-            this.groupBox3.Controls.Add(this.dataGridView1);
+            this.groupBox3.Controls.Add(this.dgvAgregados);
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.ForeColor = System.Drawing.Color.White;
             this.groupBox3.Location = new System.Drawing.Point(759, 179);
@@ -327,14 +328,14 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Agregados";
             // 
-            // label2
+            // lbTotalAgregados
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(32, 213);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Total de agregados: ";
+            this.lbTotalAgregados.AutoSize = true;
+            this.lbTotalAgregados.Location = new System.Drawing.Point(32, 213);
+            this.lbTotalAgregados.Name = "lbTotalAgregados";
+            this.lbTotalAgregados.Size = new System.Drawing.Size(111, 13);
+            this.lbTotalAgregados.TabIndex = 3;
+            this.lbTotalAgregados.Text = "Total de agregados: ";
             // 
             // btnQuitarSeleccionado
             // 
@@ -350,33 +351,33 @@
             this.btnQuitarSeleccionado.Text = "Eliminar";
             this.btnQuitarSeleccionado.UseVisualStyleBackColor = false;
             // 
-            // dataGridView1
+            // dgvAgregados
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(39)))));
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvAgregados.AllowUserToAddRows = false;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
+            this.dgvAgregados.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.dgvAgregados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvAgregados.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(39)))));
+            this.dgvAgregados.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvAgregados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            this.dgvAgregados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvAgregados.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Nombre});
-            this.dataGridView1.EnableHeadersVisualStyles = false;
-            this.dataGridView1.Location = new System.Drawing.Point(35, 37);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(145, 161);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvAgregados.EnableHeadersVisualStyles = false;
+            this.dgvAgregados.Location = new System.Drawing.Point(35, 37);
+            this.dgvAgregados.Name = "dgvAgregados";
+            this.dgvAgregados.ReadOnly = true;
+            this.dgvAgregados.RowHeadersVisible = false;
+            this.dgvAgregados.RowHeadersWidth = 51;
+            this.dgvAgregados.Size = new System.Drawing.Size(145, 161);
+            this.dgvAgregados.TabIndex = 0;
             // 
             // Nombre
             // 
@@ -413,10 +414,10 @@
             this.panel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numValoracion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudValoracion)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAgregados)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.ResumeLayout(false);
 
@@ -430,18 +431,18 @@
         private System.Windows.Forms.Label lbPlataforma;
         private System.Windows.Forms.Label lbGenero;
         private System.Windows.Forms.Label lbNombre;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cbPlataforma;
         private System.Windows.Forms.ComboBox cbGenero;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.TextBox txtNombreJuego;
+        private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbTotalAgregados;
         private System.Windows.Forms.Button btnQuitarSeleccionado;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvAgregados;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.Label lbEstadoFormulario;
-        private System.Windows.Forms.NumericUpDown numValoracion;
+        private System.Windows.Forms.NumericUpDown nudValoracion;
         private System.Windows.Forms.Button btBibliotecaEnAgregarJuego;
         private System.Windows.Forms.Button btAgregarJuegoEnAgregarJuego;
         private System.Windows.Forms.Button btPerfilGamerEnAgregarJuego;

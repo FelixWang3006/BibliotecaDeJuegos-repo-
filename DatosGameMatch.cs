@@ -78,13 +78,13 @@ namespace BibliotecaDeJuegos
 
             if (datos.Length != 10)
             {
-                throw new FormatException("La linea " + numeroLinea + " del archivo de juegos no tiene 10 datos.");
+                throw new FormatException("La línea " + numeroLinea + " del archivo de juegos no tiene 10 datos.");
             }
 
             if (!double.TryParse(datos[9], NumberStyles.Any, CultureInfo.InvariantCulture, out puntuacion) &&
                 !double.TryParse(datos[9], out puntuacion))
             {
-                throw new FormatException("La puntuacion de la linea " + numeroLinea + " no es valida.");
+                throw new FormatException("La puntuación de la línea " + numeroLinea + " no es válida.");
             }
 
             return new Videojuego(datos[0], datos[1], datos[2], datos[3], datos[4],
@@ -273,7 +273,7 @@ namespace BibliotecaDeJuegos
         {
             if (juego == null)
             {
-                throw new ArgumentException("Los datos del juego no son validos.");
+                throw new ArgumentException("Los datos del juego no son válidos.");
             }
 
             if (BuscarEnLista(biblioteca, juego.Nombre) != null)

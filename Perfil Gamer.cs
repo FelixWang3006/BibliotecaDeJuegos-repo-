@@ -16,9 +16,9 @@ namespace BibliotecaDeJuegos
 
             this.Load += Perfil_Gamer_Load;
             btnQuitarSeleccionado.Click += btnQuitarSeleccionado_Click;
-            dataGridView1.CurrentCellDirtyStateChanged += dataGridView1_CurrentCellDirtyStateChanged;
-            dataGridView1.CellValueChanged += dataGridView1_CellValueChanged;
-            dataGridView1.SelectionChanged += dataGridView1_SelectionChanged;
+            dgvAgregados.CurrentCellDirtyStateChanged += dgvAgregados_CurrentCellDirtyStateChanged;
+            dgvAgregados.CellValueChanged += dgvAgregados_CellValueChanged;
+            dgvAgregados.SelectionChanged += dgvAgregados_SelectionChanged;
             dgvJuegos.SelectionChanged += dgvJuegos_SelectionChanged;
             this.FormClosed += Ventana_FormClosed;
 
@@ -30,22 +30,22 @@ namespace BibliotecaDeJuegos
         {
             //label4.Visible = false;
             //label5.Visible = false;
-            label1.Visible = false;
-            label2.Text = "Total en el perfil: 0";
-            label3.Text = "Juegos en perfil: 0" +
+            label1.Visible = true;
+            lbTotalPerfil.Text = "Total en el perfil: 0";
+            lbPerfil.Text = "Juegos en perfil: 0" +
                 "\nFavoritos: 0" +
-                "\nGenero mas frecuente: Sin datos" +
+                "\nGénero mas frecuente: Sin datos" +
                 "\nPlataforma favorita: Sin datos" +
-                "\nValoracion promedio: 0.0";
+                "\nValoración promedio: 0.0";
 
-            dataGridView1.MultiSelect = false;
-            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridView1.AllowUserToDeleteRows = false;
+            dgvAgregados.MultiSelect = false;
+            dgvAgregados.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvAgregados.AllowUserToDeleteRows = false;
             btnQuitarSeleccionado.Text = "Eliminar del perfil";
 
             groupBox2.Text = "Mis favoritos (0)";
 
-            lbDetalleRecomendacion.Text = "Seleccione una recomendacion.";
+            lbDetalleRecomendacion.Text = "Seleccione una recomendación.";
             groupBox4.Text = "Coincidencia";
 
             dgvJuegos.ReadOnly = true;
@@ -74,13 +74,13 @@ namespace BibliotecaDeJuegos
             groupBox5.BackColor = Color.Transparent;
             groupBox5.ForeColor = Color.White; 
 
-            AplicarEstiloTabla(dataGridView1);
+            AplicarEstiloTabla(dgvAgregados);
             AplicarEstiloTabla(dgvJuegos);
 
-            dataGridView1.Columns[1].HeaderText = "Favorito (Si/No)";
-            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridView1.Columns[0].FillWeight = 65;
-            dataGridView1.Columns[1].FillWeight = 35;
+            dgvAgregados.Columns[1].HeaderText = "Favorito (Si/No)";
+            dgvAgregados.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvAgregados.Columns[0].FillWeight = 65;
+            dgvAgregados.Columns[1].FillWeight = 35;
 
           
             btnQuitarSeleccionado.AutoSize = false;
@@ -91,19 +91,19 @@ namespace BibliotecaDeJuegos
             btnQuitarSeleccionado.BackColor = Color.FromArgb(80, 60, 120);
             btnQuitarSeleccionado.ForeColor = Color.FromArgb(180, 180, 180);
 
-            listaFavoritos.BorderStyle = BorderStyle.None;
-            listaFavoritos.BackColor = Color.FromArgb(30, 41, 59); 
-            listaFavoritos.ForeColor = Color.White;
+            liboFavoritos.BorderStyle = BorderStyle.None;
+            liboFavoritos.BackColor = Color.FromArgb(30, 41, 59); 
+            liboFavoritos.ForeColor = Color.White;
 
-            label2.ForeColor = Color.White;
-            label3.ForeColor = Color.White;
+            lbTotalPerfil.ForeColor = Color.White;
+            lbPerfil.ForeColor = Color.White;
             lbDetalleRecomendacion.ForeColor = Color.FromArgb(200, 200, 200); 
 
-            ayuda.SetToolTip(dataGridView1,
+            ayuda.SetToolTip(dgvAgregados,
                 "Marque la casilla para agregar o quitar un juego de favoritos.");
             ayuda.SetToolTip(btnQuitarSeleccionado, "Eliminar el juego seleccionado del perfil.");
             ayuda.SetToolTip(dgvJuegos, "Las recomendaciones cambian automaticamente con sus favoritos.");
-            ayuda.SetToolTip(listaFavoritos, "Juegos utilizados para calcular el Top 20.");
+            ayuda.SetToolTip(liboFavoritos, "Juegos utilizados para calcular el Top 20.");
         }
         
 
@@ -152,31 +152,31 @@ namespace BibliotecaDeJuegos
         private void ActualizarPerfilCompleto()
         {
             actualizandoTabla = true;
-            dataGridView1.Rows.Clear();
+            dgvAgregados.Rows.Clear();
 
             for (int i = 0; i < DatosGameMatch.JuegosPerfil.Count; i++)
             {
                 Videojuego juego = DatosGameMatch.JuegosPerfil[i];
-                dataGridView1.Rows.Add(juego.Nombre, DatosGameMatch.EsFavorito(juego.Nombre));
+                dgvAgregados.Rows.Add(juego.Nombre, DatosGameMatch.EsFavorito(juego.Nombre));
             }
 
             actualizandoTabla = false;
-            label2.Text = "Total en el perfil: " + DatosGameMatch.JuegosPerfil.Count;
+            lbTotalPerfil.Text = "Total en el perfil: " + DatosGameMatch.JuegosPerfil.Count;
 
             MostrarFavoritos();
             MostrarRecomendaciones();
             MostrarResumenPerfil();
-            dataGridView1_SelectionChanged(null, null);
+            dgvAgregados_SelectionChanged(null, null);
         }
 
         private void MostrarFavoritos()
         {
             List<Videojuego> favoritos = DatosGameMatch.ObtenerFavoritos();
-            listaFavoritos.Items.Clear();
+            liboFavoritos.Items.Clear();
 
             for (int i = 0; i < favoritos.Count; i++)
             {
-                listaFavoritos.Items.Add(favoritos[i].Nombre);
+                liboFavoritos.Items.Add(favoritos[i].Nombre);
             }
 
             groupBox2.Text = "Mis favoritos (" + favoritos.Count + ")";
@@ -222,7 +222,7 @@ namespace BibliotecaDeJuegos
                 promedio = promedio / perfil.Count;
             }
 
-            label3.Text = "Juegos en perfil: " + perfil.Count +
+            lbPerfil.Text = "Juegos en perfil: " + perfil.Count +
                 "\nFavoritos: " + favoritos.Count +
                 "\nGenero mas frecuente: " + generoFrecuente +
                 "\nPlataforma favorita: " + plataformaFrecuente +
@@ -259,23 +259,23 @@ namespace BibliotecaDeJuegos
             return datoFrecuente;
         }
 
-        private void dataGridView1_CurrentCellDirtyStateChanged(object sender, EventArgs e)
+        private void dgvAgregados_CurrentCellDirtyStateChanged(object sender, EventArgs e)
         {
-            if (dataGridView1.IsCurrentCellDirty)
+            if (dgvAgregados.IsCurrentCellDirty)
             {
-                dataGridView1.CommitEdit(DataGridViewDataErrorContexts.Commit);
+                dgvAgregados.CommitEdit(DataGridViewDataErrorContexts.Commit);
             }
         }
 
-        private void dataGridView1_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        private void dgvAgregados_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
             if (actualizandoTabla || e.RowIndex < 0 || e.ColumnIndex != 1)
             {
                 return;
             }
 
-            string nombre = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
-            object valor = dataGridView1.Rows[e.RowIndex].Cells[1].Value;
+            string nombre = dgvAgregados.Rows[e.RowIndex].Cells[0].Value.ToString();
+            object valor = dgvAgregados.Rows[e.RowIndex].Cells[1].Value;
             bool esFavorito = valor != null && Convert.ToBoolean(valor);
 
             DatosGameMatch.CambiarFavorito(nombre, esFavorito);
@@ -286,21 +286,21 @@ namespace BibliotecaDeJuegos
 
         private void btnQuitarSeleccionado_Click(object sender, EventArgs e)
         {
-            if (dataGridView1.SelectedRows.Count == 0)
+            if (dgvAgregados.SelectedRows.Count == 0)
             {
-                MessageBox.Show("Seleccione un juego del perfil.", "Dato invalido",
+                MessageBox.Show("Seleccione un juego del perfil.", "Dato inválido",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            string nombre = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+            string nombre = dgvAgregados.SelectedRows[0].Cells[0].Value.ToString();
             DatosGameMatch.QuitarDelPerfil(nombre);
             ActualizarPerfilCompleto();
         }
 
-        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
+        private void dgvAgregados_SelectionChanged(object sender, EventArgs e)
         {
-            bool haySeleccion = dataGridView1.SelectedRows.Count > 0 && dataGridView1.SelectedRows[0].Cells[0].Value != null;
+            bool haySeleccion = dgvAgregados.SelectedRows.Count > 0 && dgvAgregados.SelectedRows[0].Cells[0].Value != null;
 
             btnQuitarSeleccionado.Enabled = haySeleccion;
 
@@ -324,9 +324,9 @@ namespace BibliotecaDeJuegos
             {
                 DataGridViewRow fila = dgvJuegos.SelectedRows[0];
                 lbDetalleRecomendacion.Text = fila.Cells[0].Value +
-                    "\nGenero: " + fila.Cells[1].Value +
+                    "\nGénero: " + fila.Cells[1].Value +
                     "\nPlataforma: " + fila.Cells[3].Value +
-                    "\nValoracion: " + fila.Cells[9].Value;
+                    "\nValoración: " + fila.Cells[9].Value;
             }
         }
 
@@ -347,11 +347,6 @@ namespace BibliotecaDeJuegos
         private void Ventana_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

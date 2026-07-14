@@ -17,11 +17,11 @@ namespace BibliotecaDeJuegos
             if (string.IsNullOrWhiteSpace(nombre))
                 throw new ArgumentException("Debe escribir el nombre del juego.");
             if (string.IsNullOrWhiteSpace(género))
-                throw new ArgumentException("Debe seleccionar el genero.");
+                throw new ArgumentException("Debe seleccionar el género.");
             if (string.IsNullOrWhiteSpace(plataforma))
                 throw new ArgumentException("Debe seleccionar la plataforma.");
             if (puntuación < 1 || puntuación > 10)
-                throw new ArgumentException("La valoracion debe estar entre 1 y 10.");
+                throw new ArgumentException("La valoración debe estar entre 1 y 10.");
 
             this.nombre = nombre.Trim();
             this.género = NormalizarGenero(género);

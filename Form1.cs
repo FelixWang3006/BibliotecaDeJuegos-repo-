@@ -218,20 +218,30 @@ namespace BibliotecaDeJuegos
             {
                 Videojuego juego = ObtenerJuegoSeleccionado();
                 liboDetalles.Items.Clear();
+                liboDetalles.Items.Add("");
                 liboDetalles.Items.Add("Nombre: " + juego.Nombre);
-                liboDetalles.Items.Add("Genero: " + juego.Género);
-                liboDetalles.Items.Add("Subgenero: " + juego.Subgénero);
+                liboDetalles.Items.Add("");
+                liboDetalles.Items.Add("Género: " + juego.Género);
+                liboDetalles.Items.Add("");
+                liboDetalles.Items.Add("Subgénero: " + juego.Subgénero);
+                liboDetalles.Items.Add("");
                 liboDetalles.Items.Add("Plataforma: " + juego.Plataforma);
+                liboDetalles.Items.Add("");
                 liboDetalles.Items.Add("Dificultad: " + juego.Dificultad);
-                liboDetalles.Items.Add("Duracion: " + juego.Duración);
+                liboDetalles.Items.Add("");
+                liboDetalles.Items.Add("Duración: " + juego.Duración);
+                liboDetalles.Items.Add("");
                 liboDetalles.Items.Add("Estilo visual: " + juego.EstiloVisual);
+                liboDetalles.Items.Add("");
                 liboDetalles.Items.Add("Experiencia: " + juego.Experiencia);
+                liboDetalles.Items.Add("");
                 liboDetalles.Items.Add("Popularidad: " + juego.Popularidad);
-                liboDetalles.Items.Add("Puntuacion: " + juego.Puntuación.ToString("0.0"));
+                liboDetalles.Items.Add("");
+                liboDetalles.Items.Add("Puntuación: " + juego.Puntuación.ToString("0.0"));
             }
             catch (ArgumentException ex)
             {
-                MessageBox.Show(ex.Message, "Dato invalido",
+                MessageBox.Show(ex.Message, "Dato inválido",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
@@ -242,7 +252,7 @@ namespace BibliotecaDeJuegos
           
             if (dgvJuegos.SelectedRows.Count == 0)
             {
-                MessageBox.Show("Seleccione un juego de la biblioteca.", "Dato invalido",
+                MessageBox.Show("Seleccione un juego de la biblioteca.", "Dato inválido",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
@@ -265,14 +275,12 @@ namespace BibliotecaDeJuegos
             }
             catch (ArgumentException ex)
             {
-                MessageBox.Show(ex.Message, "Dato invalido",
+                MessageBox.Show(ex.Message, "Dato inválido",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         
-    }
-
+        }
         
-
         private void dgvJuegos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
@@ -290,10 +298,18 @@ namespace BibliotecaDeJuegos
                 DataGridViewRow fila = dgvJuegos.SelectedRows[0];
 
                 liboDetalles.Items.Clear();
+                liboDetalles.Items.Add("");
+                liboDetalles.Items.Add("");
+                liboDetalles.Items.Add("");
+                liboDetalles.Items.Add("");
+                liboDetalles.Items.Add("");
                 liboDetalles.Items.Add(fila.Cells[0].Value.ToString());
-                liboDetalles.Items.Add("Genero: " + fila.Cells[1].Value);
+                liboDetalles.Items.Add("");
+                liboDetalles.Items.Add("Género: " + fila.Cells[1].Value);
+                liboDetalles.Items.Add("");
                 liboDetalles.Items.Add("Plataforma: " + fila.Cells[2].Value);
-                liboDetalles.Items.Add("Valoracion: " + fila.Cells[3].Value);
+                liboDetalles.Items.Add("");
+                liboDetalles.Items.Add("Valoración: " + fila.Cells[3].Value);
 
                 btnAgregarPerfil.BackColor = Color.FromArgb(124, 58, 237); 
                 btnAgregarPerfil.ForeColor = Color.White;
@@ -341,13 +357,6 @@ namespace BibliotecaDeJuegos
         private void Ventana_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
-        }
-
-       
-
-        private void dgvJuegos_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-            
         }
     }
 }
