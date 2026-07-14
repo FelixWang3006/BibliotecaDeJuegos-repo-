@@ -35,8 +35,7 @@ namespace BibliotecaDeJuegos
             }
 
             rutaArchivo = Path.Combine(Application.StartupPath, "videojuegos.txt");
-            string carpetaDatos = Path.Combine(Environment.GetFolderPath(
-                Environment.SpecialFolder.LocalApplicationData), "GameMatch");
+            string carpetaDatos = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "GameMatch");
             rutaPerfil = Path.Combine(carpetaDatos, "perfil_gamer.txt");
             rutaJuegosUsuario = Path.Combine(carpetaDatos, "juegos_usuario.txt");
 
@@ -87,8 +86,7 @@ namespace BibliotecaDeJuegos
                 throw new FormatException("La puntuación de la línea " + numeroLinea + " no es válida.");
             }
 
-            return new Videojuego(datos[0], datos[1], datos[2], datos[3], datos[4],
-                datos[5], datos[6], datos[7], datos[8], puntuacion);
+            return new Videojuego(datos[0], datos[1], datos[2], datos[3], datos[4], datos[5], datos[6], datos[7], datos[8], puntuacion);
         }
 
         public static bool AgregarAlPerfil(Videojuego juego)
@@ -310,19 +308,12 @@ namespace BibliotecaDeJuegos
 
         private static void CargarJuegosDelUsuario(List<Videojuego> juegosCargados)
         {
-            string rutaLectura = rutaJuegosUsuario;
-
-            if (!File.Exists(rutaLectura))
+            if (!File.Exists(rutaJuegosUsuario))
             {
-                rutaLectura = Path.Combine(Application.StartupPath, "juegos_usuario_inicial.txt");
-
-                if (!File.Exists(rutaLectura))
-                {
-                    return;
-                }
+                return;
             }
 
-            string[] lineas = File.ReadAllLines(rutaLectura, Encoding.UTF8);
+            string[] lineas = File.ReadAllLines(rutaJuegosUsuario, Encoding.UTF8);
 
             for (int i = 0; i < lineas.Length; i++)
             {
