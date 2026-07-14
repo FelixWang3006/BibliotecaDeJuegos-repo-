@@ -106,6 +106,10 @@
     <Content Include="juegos_usuario_inicial.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\GameMatch.png" />
+    <None Include="Resources\GameMatch1.png" />
+    <None Include="Resources\GameMatch11.png" />
+    <None Include="Resources\b.png" />
     <Content Include="videojuegos.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

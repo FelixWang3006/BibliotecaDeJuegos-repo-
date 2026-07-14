@@ -28,8 +28,8 @@ namespace BibliotecaDeJuegos
 
         private void CrearControlesAuxiliares()
         {
-            label4.Visible = false;
-            label5.Visible = false;
+            //label4.Visible = false;
+            //label5.Visible = false;
             label1.Visible = false;
             label2.Text = "Total en el perfil: 0";
             label3.Text = "Juegos en perfil: 0" +
@@ -55,30 +55,49 @@ namespace BibliotecaDeJuegos
 
         private void AplicarEstiloInterfaz()
         {
-            this.BackColor = Color.FromArgb(245, 247, 250);
-            groupBox1.BackColor = Color.White;
-            groupBox2.BackColor = Color.White;
-            groupBox3.BackColor = Color.White;
-            groupBox4.BackColor = Color.White;
-            groupBox5.BackColor = Color.White;
+          
+            this.BackColor = Color.FromArgb(27, 38, 59); 
+
+           
+            groupBox1.BackColor = Color.Transparent;
+            groupBox1.ForeColor = Color.White; 
+
+            groupBox2.BackColor = Color.Transparent;
+            groupBox2.ForeColor = Color.White; 
+
+            groupBox3.BackColor = Color.Transparent;
+            groupBox3.ForeColor = Color.White;
+
+            groupBox4.BackColor = Color.Transparent;
+            groupBox4.ForeColor = Color.White;
+
+            groupBox5.BackColor = Color.Transparent;
+            groupBox5.ForeColor = Color.White; 
 
             AplicarEstiloTabla(dataGridView1);
             AplicarEstiloTabla(dgvJuegos);
+
             dataGridView1.Columns[1].HeaderText = "Favorito (Si/No)";
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.Columns[0].FillWeight = 65;
             dataGridView1.Columns[1].FillWeight = 35;
 
-            btnQuitarSeleccionado.BackColor = Color.FromArgb(220, 38, 38);
-            btnQuitarSeleccionado.ForeColor = Color.White;
+          
+            btnQuitarSeleccionado.AutoSize = false;
+            btnQuitarSeleccionado.TextAlign = ContentAlignment.MiddleCenter;
             btnQuitarSeleccionado.FlatStyle = FlatStyle.Flat;
             btnQuitarSeleccionado.FlatAppearance.BorderSize = 0;
             btnQuitarSeleccionado.Enabled = false;
+            btnQuitarSeleccionado.BackColor = Color.FromArgb(80, 60, 120);
+            btnQuitarSeleccionado.ForeColor = Color.FromArgb(180, 180, 180);
 
-            listaFavoritos.BorderStyle = BorderStyle.FixedSingle;
-            listaFavoritos.BackColor = Color.FromArgb(248, 250, 252);
-            label3.ForeColor = Color.FromArgb(30, 41, 59);
-            lbDetalleRecomendacion.ForeColor = Color.FromArgb(51, 65, 85);
+            listaFavoritos.BorderStyle = BorderStyle.None;
+            listaFavoritos.BackColor = Color.FromArgb(30, 41, 59); 
+            listaFavoritos.ForeColor = Color.White;
+
+            label2.ForeColor = Color.White;
+            label3.ForeColor = Color.White;
+            lbDetalleRecomendacion.ForeColor = Color.FromArgb(200, 200, 200); 
 
             ayuda.SetToolTip(dataGridView1,
                 "Marque la casilla para agregar o quitar un juego de favoritos.");
@@ -86,16 +105,34 @@ namespace BibliotecaDeJuegos
             ayuda.SetToolTip(dgvJuegos, "Las recomendaciones cambian automaticamente con sus favoritos.");
             ayuda.SetToolTip(listaFavoritos, "Juegos utilizados para calcular el Top 20.");
         }
+        
 
         private void AplicarEstiloTabla(DataGridView tabla)
         {
-            tabla.BackgroundColor = Color.White;
+            tabla.BackgroundColor = Color.FromArgb(30, 41, 59);
             tabla.BorderStyle = BorderStyle.None;
             tabla.RowHeadersVisible = false;
-            tabla.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(241, 245, 249);
-            tabla.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(30, 41, 59);
-            tabla.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+
+            
+            tabla.CellBorderStyle = DataGridViewCellBorderStyle.Single; 
+            tabla.GridColor = Color.FromArgb(255, 255, 255); 
+
             tabla.EnableHeadersVisualStyles = false;
+            tabla.ColumnHeadersVisible = true;
+
+           
+            tabla.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(124, 58, 237);
+            tabla.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            tabla.ColumnHeadersDefaultCellStyle.Font = new Font(tabla.Font, FontStyle.Bold);
+
+           
+            tabla.DefaultCellStyle.BackColor = Color.FromArgb(30, 41, 59);
+            tabla.DefaultCellStyle.ForeColor = Color.White;
+            tabla.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(39, 51, 71);
+
+         
+            tabla.DefaultCellStyle.SelectionBackColor = Color.FromArgb(124, 58, 237);
+            tabla.DefaultCellStyle.SelectionForeColor = Color.White;
         }
 
         private void Perfil_Gamer_Load(object sender, EventArgs e)
@@ -129,6 +166,7 @@ namespace BibliotecaDeJuegos
             MostrarFavoritos();
             MostrarRecomendaciones();
             MostrarResumenPerfil();
+            dataGridView1_SelectionChanged(null, null);
         }
 
         private void MostrarFavoritos()
@@ -262,7 +300,22 @@ namespace BibliotecaDeJuegos
 
         private void dataGridView1_SelectionChanged(object sender, EventArgs e)
         {
-            btnQuitarSeleccionado.Enabled = dataGridView1.SelectedRows.Count > 0;
+            bool haySeleccion = dataGridView1.SelectedRows.Count > 0 && dataGridView1.SelectedRows[0].Cells[0].Value != null;
+
+            btnQuitarSeleccionado.Enabled = haySeleccion;
+
+            if (haySeleccion)
+            {
+               
+                btnQuitarSeleccionado.BackColor = Color.FromArgb(124, 58, 237);
+                btnQuitarSeleccionado.ForeColor = Color.White;
+            }
+            else
+            {
+              
+                btnQuitarSeleccionado.BackColor = Color.FromArgb(80, 60, 120);
+                btnQuitarSeleccionado.ForeColor = Color.FromArgb(180, 180, 180);
+            }
         }
 
         private void dgvJuegos_SelectionChanged(object sender, EventArgs e)

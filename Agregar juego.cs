@@ -28,42 +28,65 @@ namespace BibliotecaDeJuegos
 
         private void AplicarEstiloInterfaz()
         {
-            this.BackColor = Color.FromArgb(245, 247, 250);
+          
+            this.BackColor = Color.FromArgb(27, 38, 59); 
             this.KeyPreview = true;
-            groupBox1.BackColor = Color.White;
-            groupBox3.BackColor = Color.White;
 
-            button6.BackColor = Color.FromArgb(37, 99, 235);
-            button6.ForeColor = Color.White;
+          
+            groupBox1.BackColor = Color.Transparent;
+            groupBox3.BackColor = Color.Transparent;
+
+         
             button6.FlatStyle = FlatStyle.Flat;
             button6.FlatAppearance.BorderSize = 0;
             button6.Enabled = false;
+            button6.BackColor = Color.FromArgb(80, 60, 120); 
+            button6.ForeColor = Color.FromArgb(180, 180, 180); 
 
-            button2.BackColor = Color.FromArgb(226, 232, 240);
+           
+            button2.BackColor = Color.FromArgb(71, 85, 105); 
+            button2.ForeColor = Color.White;
             button2.FlatStyle = FlatStyle.Flat;
             button2.FlatAppearance.BorderSize = 0;
 
-            btnQuitarSeleccionado.BackColor = Color.FromArgb(220, 38, 38);
-            btnQuitarSeleccionado.ForeColor = Color.White;
+            
             btnQuitarSeleccionado.FlatStyle = FlatStyle.Flat;
             btnQuitarSeleccionado.FlatAppearance.BorderSize = 0;
             btnQuitarSeleccionado.Enabled = false;
+            btnQuitarSeleccionado.BackColor = Color.FromArgb(80, 60, 120); 
+            btnQuitarSeleccionado.ForeColor = Color.FromArgb(180, 180, 180);
 
-            dataGridView1.BackgroundColor = Color.White;
+           
+            dataGridView1.BackgroundColor = Color.FromArgb(30, 41, 59); 
             dataGridView1.BorderStyle = BorderStyle.None;
             dataGridView1.RowHeadersVisible = false;
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridView1.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(241, 245, 249);
-            dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(30, 41, 59);
-            dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridView1.MultiSelect = false;
+
+            
             dataGridView1.EnableHeadersVisualStyles = false;
+            dataGridView1.ColumnHeadersVisible = true;
+
+           
+            dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(139, 92, 246);
+            dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font(dataGridView1.Font, FontStyle.Bold);
+
+            
+            dataGridView1.DefaultCellStyle.BackColor = Color.FromArgb(30, 41, 59);
+            dataGridView1.DefaultCellStyle.ForeColor = Color.White;
+            dataGridView1.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(39, 51, 71); 
+
+            dataGridView1.DefaultCellStyle.SelectionBackColor = Color.FromArgb(124, 58, 237); 
+            dataGridView1.DefaultCellStyle.SelectionForeColor = Color.White;
 
             textBox1.MaxLength = 80;
 
             ayuda.SetToolTip(textBox1, "Escriba un nombre unico para el juego.");
             ayuda.SetToolTip(cbGenero, "Use el mismo genero disponible en la Biblioteca.");
             ayuda.SetToolTip(comboBox3, "Las plataformas coinciden con el filtro de Biblioteca.");
-            ayuda.SetToolTip(numericUpDown1, "Valoracion personal entre 1 y 10.");
+            ayuda.SetToolTip(numValoracion, "Valoracion personal entre 1 y 10.");
             ayuda.SetToolTip(button6, "Guardar el juego (tambien puede presionar Enter).");
         }
 
@@ -95,7 +118,7 @@ namespace BibliotecaDeJuegos
                 string nombre = textBox1.Text.Trim();
                 string genero = ObtenerGeneroValido(cbGenero.Text);
                 string plataforma = ObtenerPlataformaValida(comboBox3.Text);
-                double valoracion = Convert.ToDouble(numericUpDown1.Value);
+                double valoracion = Convert.ToDouble(numValoracion.Value);
 
                 if (nombre.Contains(";"))
                 {
@@ -178,25 +201,67 @@ namespace BibliotecaDeJuegos
             textBox1.Clear();
             cbGenero.SelectedIndex = -1;
             comboBox3.SelectedIndex = -1;
-            numericUpDown1.Value = 1;
+            numValoracion.Value = 1;
             textBox1.Focus();
+
+           
+            CamposJuego_Cambiaron(null, null);
+
+
         }
 
         private void CamposJuego_Cambiaron(object sender, EventArgs e)
         {
-            button6.Enabled = textBox1.Text.Trim() != "" &&
-                cbGenero.SelectedIndex != -1 && comboBox3.SelectedIndex != -1;
+            bool camposValidos = !string.IsNullOrWhiteSpace(textBox1.Text) &&
+                         cbGenero.SelectedIndex != -1 &&
+                         comboBox3.SelectedIndex != -1;
 
-            if (!button6.Enabled && lbEstadoFormulario != null)
+            button6.Enabled = camposValidos;
+
+            if (camposValidos)
             {
-                lbEstadoFormulario.ForeColor = Color.FromArgb(71, 85, 105);
-                lbEstadoFormulario.Text = "Complete los datos para habilitar el boton Agregar.";
+                
+                button6.BackColor = Color.FromArgb(124, 58, 237);
+                button6.ForeColor = Color.White;
+
+                if (lbEstadoFormulario != null)
+                {
+                    lbEstadoFormulario.ForeColor = Color.FromArgb(34, 197, 94);
+                    lbEstadoFormulario.Text = "Campos listos para guardar.";
+                }
+            }
+            else
+            {
+          
+                button6.BackColor = Color.FromArgb(80, 60, 120);
+                button6.ForeColor = Color.FromArgb(180, 180, 180);
+
+                if (lbEstadoFormulario != null)
+                {
+                    lbEstadoFormulario.ForeColor = Color.FromArgb(148, 163, 184);
+                    lbEstadoFormulario.Text = "Complete los datos para habilitar el boton Agregar.";
+                }
             }
         }
+        
 
         private void dataGridView1_SelectionChanged(object sender, EventArgs e)
         {
-            btnQuitarSeleccionado.Enabled = dataGridView1.SelectedRows.Count > 0;
+            bool haySeleccion = dataGridView1.SelectedRows.Count > 0;
+            btnQuitarSeleccionado.Enabled = haySeleccion;
+
+            if (haySeleccion)
+            {
+              
+                btnQuitarSeleccionado.BackColor = Color.FromArgb(124, 58, 237);
+                btnQuitarSeleccionado.ForeColor = Color.White;
+            }
+            else
+            {
+                
+                btnQuitarSeleccionado.BackColor = Color.FromArgb(80, 60, 120); 
+                btnQuitarSeleccionado.ForeColor = Color.FromArgb(180, 180, 180);
+            }
         }
 
         private void Agregar_juego_KeyDown(object sender, KeyEventArgs e)
@@ -271,5 +336,40 @@ namespace BibliotecaDeJuegos
             Application.Exit();
         }
 
+        private void numValoracion_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            
+            if (e.KeyChar == (char)Keys.Back)
+            {
+                e.Handled = false;
+                return;
+            }
+
+          
+            NumericUpDown control = (NumericUpDown)sender;
+            string textoResultante = control.Text + e.KeyChar.ToString();
+
+            
+            string patronProgreso = @"^[0-9]{1,2}$|^[0-9]{1,2}\.$|^[0-9]{1,2}\.[0-9]$";
+
+            
+            if (System.Text.RegularExpressions.Regex.IsMatch(textoResultante, patronProgreso))
+            {
+                e.Handled = false; 
+            }
+            else
+            {
+                e.Handled = true;  
+            }
+        }
+
+        private void numValoracion_Enter(object sender, EventArgs e)
+        {
+          
+            this.BeginInvoke((MethodInvoker)delegate
+            {
+                numValoracion.Select(numValoracion.Text.Length, 0);
+            });
+        }
     }
 }

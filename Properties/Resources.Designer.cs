@@ -83,6 +83,16 @@ namespace BibliotecaDeJuegos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap b {
+            get {
+                object obj = ResourceManager.GetObject("b", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap deporte_preview {
             get {
                 object obj = ResourceManager.GetObject("deporte_preview", resourceCulture);
@@ -96,6 +106,36 @@ namespace BibliotecaDeJuegos.Properties {
         internal static System.Drawing.Bitmap estrategia_preview {
             get {
                 object obj = ResourceManager.GetObject("estrategia_preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GameMatch {
+            get {
+                object obj = ResourceManager.GetObject("GameMatch", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GameMatch1 {
+            get {
+                object obj = ResourceManager.GetObject("GameMatch1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GameMatch11 {
+            get {
+                object obj = ResourceManager.GetObject("GameMatch11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

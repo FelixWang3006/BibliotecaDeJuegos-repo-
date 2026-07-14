@@ -13,7 +13,8 @@ namespace BibliotecaDeJuegos
         public Form1()
         {
             InitializeComponent();
-            btAgregarPerfil.Click += btAgregarPerfil_Click;
+            btnAgregarPerfil.Click += btAgregarPerfil_Click;
+            btnVerDetalles.Click += btVerDetalles_Click;
             dgvJuegos.CellDoubleClick += dgvJuegos_CellDoubleClick;
             dgvJuegos.SelectionChanged += dgvJuegos_SelectionChanged;
             dgvJuegos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
@@ -23,45 +24,63 @@ namespace BibliotecaDeJuegos
 
         private void AplicarEstiloInterfaz()
         {
-            this.BackColor = Color.FromArgb(245, 247, 250);
-            groupBox1.BackColor = Color.White;
-            groupBox2.BackColor = Color.White;
-            groupBox3.BackColor = Color.White;
+            
+            btnAgregarPerfil.Enabled = true;
+            btnVerDetalles.Enabled = true;
 
-            dgvJuegos.BackgroundColor = Color.White;
+            
+            btnAgregarPerfil.BackColor = Color.FromArgb(60, 40, 110);
+            btnAgregarPerfil.ForeColor = Color.White;
+            btnAgregarPerfil.FlatStyle = FlatStyle.Flat;
+            btnAgregarPerfil.FlatAppearance.BorderSize = 0;
+
+            btnVerDetalles.BackColor = Color.FromArgb(30, 35, 55);
+            btnVerDetalles.ForeColor = Color.White;
+            btnVerDetalles.FlatStyle = FlatStyle.Flat;
+            btnVerDetalles.FlatAppearance.BorderSize = 0;
+
+            lbTotalJuegos.Font = new Font(lbTotalJuegos.Font, FontStyle.Bold);
+
+         
+            dgvJuegos.EnableHeadersVisualStyles = false;
+            dgvJuegos.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(124, 58, 237);
+            dgvJuegos.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dgvJuegos.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            dgvJuegos.ColumnHeadersDefaultCellStyle.SelectionBackColor = Color.FromArgb(124, 58, 237);
+            dgvJuegos.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dgvJuegos.ColumnHeadersHeight = 35;
+
+            dgvJuegos.BackgroundColor = Color.FromArgb(22, 30, 46);
             dgvJuegos.BorderStyle = BorderStyle.None;
             dgvJuegos.RowHeadersVisible = false;
-            dgvJuegos.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(241, 245, 249);
-            dgvJuegos.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(30, 41, 59);
-            dgvJuegos.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
-            dgvJuegos.EnableHeadersVisualStyles = false;
+            dgvJuegos.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dgvJuegos.GridColor = Color.FromArgb(51, 65, 85);
 
-            btBuscar.BackColor = Color.FromArgb(37, 99, 235);
-            btBuscar.ForeColor = Color.White;
-            btBuscar.FlatStyle = FlatStyle.Flat;
-            btBuscar.FlatAppearance.BorderSize = 0;
+            dgvJuegos.RowsDefaultCellStyle.BackColor = Color.FromArgb(22, 30, 46);
+            dgvJuegos.RowsDefaultCellStyle.ForeColor = Color.White;
+            dgvJuegos.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(22, 30, 46);
+            dgvJuegos.AlternatingRowsDefaultCellStyle.ForeColor = Color.White;
+            dgvJuegos.RowsDefaultCellStyle.SelectionBackColor = Color.FromArgb(124, 58, 237);
+            dgvJuegos.RowsDefaultCellStyle.SelectionForeColor = Color.White;
 
-            btAgregarPerfil.BackColor = Color.FromArgb(22, 163, 74);
-            btAgregarPerfil.ForeColor = Color.White;
-            btAgregarPerfil.FlatStyle = FlatStyle.Flat;
-            btAgregarPerfil.FlatAppearance.BorderSize = 0;
-
-            btVerDetalles.BackColor = Color.FromArgb(71, 85, 105);
-            btVerDetalles.ForeColor = Color.White;
-            btVerDetalles.FlatStyle = FlatStyle.Flat;
-            btVerDetalles.FlatAppearance.BorderSize = 0;
-
-            btAgregarPerfil.Enabled = false;
-            btVerDetalles.Enabled = false;
-            lbTotalJuegos.Font = new Font(lbTotalJuegos.Font, FontStyle.Bold);
-            lbTotalJuegos.ForeColor = Color.FromArgb(30, 64, 175);
-
-            ayuda.SetToolTip(btBuscar, "Aplicar los tres filtros seleccionados.");
-            ayuda.SetToolTip(btLimpiar, "Restablecer filtros y mostrar todos los juegos.");
-            ayuda.SetToolTip(btAgregarPerfil, "Agregar el juego seleccionado al perfil gamer.");
-            ayuda.SetToolTip(btVerDetalles, "Mostrar todos los datos del juego seleccionado.");
+            ayuda.SetToolTip(btnBuscar, "Aplicar los tres filtros seleccionados.");
+            ayuda.SetToolTip(btnLimpiar, "Restablecer filtros y mostrar todos los juegos.");
+            ayuda.SetToolTip(btnAgregarPerfil, "Agregar el juego seleccionado al perfil gamer.");
+            ayuda.SetToolTip(btnVerDetalles, "Mostrar todos los datos del juego seleccionado.");
             ayuda.SetToolTip(dgvJuegos, "Seleccione una fila o haga doble clic para ver detalles.");
+
+            dgvJuegos.BackgroundColor = Color.FromArgb(22, 30, 46);
+            dgvJuegos.BorderStyle = BorderStyle.None;
+            dgvJuegos.RowHeadersVisible = false;
+
+          
+            dgvJuegos.CellBorderStyle = DataGridViewCellBorderStyle.Single;
+
+           
+            dgvJuegos.GridColor = Color.FromArgb(255, 255, 255); 
+            
         }
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -156,6 +175,14 @@ namespace BibliotecaDeJuegos
             }
 
             lbTotalJuegos.Text = "Total de juegos: " + juegos.Count;
+
+        
+            if (dgvJuegos.Rows.Count > 0)
+            {
+                dgvJuegos.Rows[0].Selected = true; 
+            }
+
+            dgvJuegos.Refresh();
         }
 
         private Videojuego ObtenerJuegoSeleccionado()
@@ -180,6 +207,13 @@ namespace BibliotecaDeJuegos
 
         private void btVerDetalles_Click(object sender, EventArgs e)
         {
+            if (dgvJuegos.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Seleccione un juego de la biblioteca.", "Dato invalido",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             try
             {
                 Videojuego juego = ObtenerJuegoSeleccionado();
@@ -201,9 +235,18 @@ namespace BibliotecaDeJuegos
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+        
 
         private void btAgregarPerfil_Click(object sender, EventArgs e)
         {
+          
+            if (dgvJuegos.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Seleccione un juego de la biblioteca.", "Dato invalido",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             try
             {
                 Videojuego juego = ObtenerJuegoSeleccionado();
@@ -225,7 +268,10 @@ namespace BibliotecaDeJuegos
                 MessageBox.Show(ex.Message, "Dato invalido",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-        }
+        
+    }
+
+        
 
         private void dgvJuegos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -238,9 +284,36 @@ namespace BibliotecaDeJuegos
         private void dgvJuegos_SelectionChanged(object sender, EventArgs e)
         {
             bool haySeleccion = dgvJuegos.SelectedRows.Count > 0;
-            btAgregarPerfil.Enabled = haySeleccion;
-            btVerDetalles.Enabled = haySeleccion;
+
+            if (haySeleccion)
+            {
+                DataGridViewRow fila = dgvJuegos.SelectedRows[0];
+
+                liboDetalles.Items.Clear();
+                liboDetalles.Items.Add(fila.Cells[0].Value.ToString());
+                liboDetalles.Items.Add("Genero: " + fila.Cells[1].Value);
+                liboDetalles.Items.Add("Plataforma: " + fila.Cells[2].Value);
+                liboDetalles.Items.Add("Valoracion: " + fila.Cells[3].Value);
+
+                btnAgregarPerfil.BackColor = Color.FromArgb(124, 58, 237); 
+                btnAgregarPerfil.ForeColor = Color.White;
+
+                btnVerDetalles.BackColor = Color.FromArgb(41, 49, 79);     
+                btnVerDetalles.ForeColor = Color.White;
+            }
+            else
+            {
+              
+                btnAgregarPerfil.BackColor = Color.FromArgb(60, 40, 110);  
+                btnAgregarPerfil.ForeColor = Color.FromArgb(150, 150, 150); 
+
+                btnVerDetalles.BackColor = Color.FromArgb(30, 35, 55);     
+                btnVerDetalles.ForeColor = Color.FromArgb(150, 150, 150);
+            }
+
+            dgvJuegos.Refresh();
         }
+       
 
         private void btLimpiar_Click(object sender, EventArgs e)
         {
@@ -268,6 +341,13 @@ namespace BibliotecaDeJuegos
         private void Ventana_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+       
+
+        private void dgvJuegos_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            
         }
     }
 }
