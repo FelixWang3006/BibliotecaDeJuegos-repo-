@@ -161,7 +161,7 @@
             this.groupBox3.ForeColor = System.Drawing.Color.White;
             this.groupBox3.Location = new System.Drawing.Point(222, 385);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(1055, 309);
+            this.groupBox3.Size = new System.Drawing.Size(963, 309);
             this.groupBox3.TabIndex = 28;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Top 20 recomendación";
@@ -201,7 +201,7 @@
             this.dgvJuegos.RowHeadersVisible = false;
             this.dgvJuegos.RowHeadersWidth = 51;
             this.dgvJuegos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvJuegos.Size = new System.Drawing.Size(1043, 253);
+            this.dgvJuegos.Size = new System.Drawing.Size(951, 253);
             this.dgvJuegos.TabIndex = 0;
             // 
             // reco
@@ -461,7 +461,7 @@
             this.pbLogo.Image = global::BibliotecaDeJuegos.Properties.Resources.GameMatch11;
             this.pbLogo.Location = new System.Drawing.Point(1031, 49);
             this.pbLogo.Name = "pbLogo";
-            this.pbLogo.Size = new System.Drawing.Size(246, 105);
+            this.pbLogo.Size = new System.Drawing.Size(154, 82);
             this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbLogo.TabIndex = 34;
             this.pbLogo.TabStop = false;
@@ -471,7 +471,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
-            this.ClientSize = new System.Drawing.Size(1307, 749);
+            this.ClientSize = new System.Drawing.Size(1214, 749);
             this.Controls.Add(this.pbLogo);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
