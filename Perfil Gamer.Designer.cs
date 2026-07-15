@@ -159,9 +159,9 @@
             this.groupBox3.Controls.Add(this.dgvJuegos);
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.ForeColor = System.Drawing.Color.White;
-            this.groupBox3.Location = new System.Drawing.Point(297, 385);
+            this.groupBox3.Location = new System.Drawing.Point(222, 385);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(1283, 309);
+            this.groupBox3.Size = new System.Drawing.Size(1055, 309);
             this.groupBox3.TabIndex = 28;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Top 20 recomendación";
@@ -201,7 +201,7 @@
             this.dgvJuegos.RowHeadersVisible = false;
             this.dgvJuegos.RowHeadersWidth = 51;
             this.dgvJuegos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvJuegos.Size = new System.Drawing.Size(1274, 253);
+            this.dgvJuegos.Size = new System.Drawing.Size(1043, 253);
             this.dgvJuegos.TabIndex = 0;
             // 
             // reco
@@ -292,7 +292,7 @@
             this.groupBox1.Controls.Add(this.dgvAgregados);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(297, 26);
+            this.groupBox1.Location = new System.Drawing.Point(222, 26);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(266, 324);
             this.groupBox1.TabIndex = 29;
@@ -378,7 +378,7 @@
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.White;
-            this.groupBox2.Location = new System.Drawing.Point(594, 26);
+            this.groupBox2.Location = new System.Drawing.Point(519, 26);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(230, 324);
             this.groupBox2.TabIndex = 31;
@@ -413,7 +413,7 @@
             this.groupBox4.Controls.Add(this.lbDetalleRecomendacion);
             this.groupBox4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.ForeColor = System.Drawing.Color.White;
-            this.groupBox4.Location = new System.Drawing.Point(852, 250);
+            this.groupBox4.Location = new System.Drawing.Point(777, 250);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(200, 100);
             this.groupBox4.TabIndex = 32;
@@ -436,7 +436,7 @@
             this.groupBox5.Controls.Add(this.lbPerfil);
             this.groupBox5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox5.ForeColor = System.Drawing.Color.White;
-            this.groupBox5.Location = new System.Drawing.Point(852, 26);
+            this.groupBox5.Location = new System.Drawing.Point(777, 26);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(225, 165);
             this.groupBox5.TabIndex = 33;
@@ -459,7 +459,7 @@
             // 
             this.pbLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbLogo.Image = global::BibliotecaDeJuegos.Properties.Resources.GameMatch11;
-            this.pbLogo.Location = new System.Drawing.Point(1331, 49);
+            this.pbLogo.Location = new System.Drawing.Point(1031, 49);
             this.pbLogo.Name = "pbLogo";
             this.pbLogo.Size = new System.Drawing.Size(246, 105);
             this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -471,7 +471,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
-            this.ClientSize = new System.Drawing.Size(1652, 749);
+            this.ClientSize = new System.Drawing.Size(1307, 749);
             this.Controls.Add(this.pbLogo);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
